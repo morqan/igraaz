@@ -1,0 +1,28 @@
+@import "abstracts/bt5start";
+  
+@import "abstracts/function";
+@import "abstracts/mixin";
+@import "abstracts/variables";
+@import "abstracts/bt5end";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+@import "base/fonts";
+
+@import "components/about"; 
+@import "components/owlCard"; 
+@import "components/consol"; 
+@import "components/advertCard"; 
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/navigation";
+
+@import "pages/contact";
+@import "pages/index";
+
+
+
+
+
+    

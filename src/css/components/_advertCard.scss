@@ -1,0 +1,62 @@
+.advertCard {
+    border-radius: 1.8rem;
+    // background-color: $color-advert;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin-bottom: 2rem;
+    
+    &__imgBox{
+        height: 165px;
+        box-shadow: inset 0px -70px 117px 0px rgba(0,0,0,0.82);
+        background-color: transparent;
+    }
+
+    &__img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: -2;
+    }
+  
+    &__title{
+        color: $color-white;
+        text-align: center;
+        font-size: 1.8rem;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        padding: 0 1.5rem;
+        font-weight: bold;
+        line-height: 1.8rem;
+        margin-top: -1.5rem;
+    }
+    &__content{
+        color: #fff;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color-advert;
+      
+    }
+
+    &__price{
+        font-size: 2.4rem;
+    }
+    &__date{
+        color: $color-white;
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+        background-color: $color-advert;
+
+    }
+
+  }
+
+
+ 

@@ -1,0 +1,65 @@
+.menu{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 5rem;
+
+    &__icon{
+        margin-right: .5rem;
+    }
+    &__left{
+        flex: 1 1 auto;
+    }
+    &__logo{
+        flex: 1 1 auto;
+    }
+
+   &__list{
+       display: flex;
+       align-items: center;
+       padding-left: unset;
+       list-style: none;
+       color: $color-gray;
+       font-size: 1.2rem;
+   }
+   &__item:not(:last-child){
+         margin-right: 1rem;
+    }
+   &__topLink{
+        color: $color-gray;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    &__link{
+        color: $color-white;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+}
+
+
+ .before,
+	 .after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		bottom: 0;
+		z-index: 9;
+		/* demo-only decoration */
+		
+	}
+	
+	 .before {
+		transform: skew(25deg);
+        left: 25px;
+        border-left: 3px solid #222124;
+        
+	}
+	
+	 .after {
+		transform: skew(-25deg);
+		right: 25px;
+        left: auto;
+        border-right: 3px solid #222124;
+}

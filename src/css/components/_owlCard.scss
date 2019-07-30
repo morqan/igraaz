@@ -1,0 +1,105 @@
+.owlCard{
+    position: relative;
+    &__imgBox{
+        box-shadow: inset 0px -40px 70px 30px rgba(0,0,0,.9);
+        height: 36rem;
+        img{
+            z-index: -2;
+            position: relative;
+            height: 100%;
+        }
+    }
+    &__content{
+        position: absolute;
+        bottom: 0;
+        color: #fff;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        
+    }
+    &__date{
+        margin-bottom: .5rem;
+        color: $color-gray-1;
+        font-size: 1.2rem;
+        i{
+            margin-right: .5rem;
+        }
+    }
+    &__name{
+        font-size: 1.8rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 26rem;
+        @include respondmin(md) {
+            max-width: 16rem;
+        }
+        @include respondmin(xl) {
+            max-width: 20rem;
+        }
+    }
+    &__price{
+        height: 7.5rem;
+        width: 7.5rem;
+        border: 1px solid $color-red;
+        line-height: 7.5rem;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 2rem;
+    }
+}
+.myOwl{
+    background-color: $color-brown;
+    padding: 1rem 1rem;
+
+    &__dots{
+        display: flex;
+        justify-content: center;
+       
+    }
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__dot{
+        background-color: transparent;
+        border: 1px solid $color-red;
+        border-radius: 3px;
+        height: 20px;
+        width: 10px;
+        padding: 0;
+        transition: all .5s;
+        margin-right: .2rem;
+
+        &--active{
+            background-color: $color-red;
+            width: 17px;
+        }
+    }
+}
+
+.owl-prev {
+  background-color: transparent;
+  border: 1px solid $color-red;
+  color: $color-red;
+  font-weight: 500;
+  font-size: 1.4rem;
+  border-radius: .5rem;
+  padding: .5rem 1.5rem;
+  line-height: normal;
+}
+.owl-next {
+    background-color: transparent;
+    border: 1px solid $color-red;
+    color: $color-red;
+    font-weight: 500;
+    font-size: 1.4rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    line-height: normal;
+  }

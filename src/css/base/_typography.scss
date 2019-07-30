@@ -1,0 +1,21 @@
+.azn {
+	font-family: $aznb;
+}
+.section__headering{
+	color: $color-white;
+	font-size: 1.6rem;
+	display: grid;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: minmax(10px, 1fr) auto minmax(10px, 7fr);
+	grid-gap:.6rem;
+	&::before{
+		content: '';
+		border-top: 2px solid;
+	}
+	&::after{
+		content: '';
+		border-top: 2px solid;
+	}
+}
