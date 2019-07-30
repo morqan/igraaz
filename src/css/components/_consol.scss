@@ -9,6 +9,15 @@
     justify-content: space-between;
     align-items: center;
     width: 10rem;
+
+    &--xbox{
+        color: $color-green;
+        border-color: $color-green;
+    }
+    &--pc{
+        color: $color-pc;
+        border-color: $color-pc;
+    }
     img{
         width: 2rem!important;
         height: 2rem;
