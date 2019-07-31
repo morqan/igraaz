@@ -1,0 +1,46 @@
+.paymantCard{
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px -70px 117px 0px rgba(0,0,0,0.82);
+    border-radius: 1.8rem;
+    background-color: $color-gray-paymant;
+    color: $color-white;
+    text-align: center;
+    padding-top: 1.5rem;
+    height: 19rem;
+    position: relative;
+    margin-bottom: 2rem;
+
+    img{
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+   &__title{
+       font-size: 1.8rem;
+       text-transform: uppercase;
+       position: absolute;
+       bottom: 1.7rem;
+       left: 50%;
+       transform: translateX(-50%);
+       white-space: nowrap;
+   }
+}
+
+.Rounded_Rectangle_1 {
+    border-radius: 18px;
+    background-color: rgb(33, 36, 39);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 699px;
+    top: 175px;
+    width: 226px;
+    height: 172px;
+    z-index: 44;
+  }
+  
+  
+  
+  
+  
