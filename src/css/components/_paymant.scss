@@ -21,7 +21,7 @@
         padding-right: 1.5rem;
         margin-right: .5rem;
         border-radius: .5rem;
-        
+        width: 100%;
 
         input {
             position: absolute;
@@ -36,7 +36,12 @@
               }
             &:checked ~ .paymant__checkbox-checkmark:after {
                 display: block;
-              
+                transform: rotate(45deg);
+                height: 2rem;
+                left: 32%;
+                top: 25%;
+                width: 1.2rem;
+                
               }
           }
         &-checkmark {
@@ -46,22 +51,20 @@
             height: 5rem;
             width: 3.5rem;
             background-color: $color-advert;
-            border: 1px solid #fff;
+            border: 1px solid $color-gray-border;
            
             border-radius: .5rem;
             &:after {
                 content: "";
                 position: absolute;
-                display: none;
-                left: 32%;
-                top: 25%;
-                width: 1.2rem;
-                height: 2rem;
-                border: solid white;
+                display: block;
+                left: 20%;
+                top: 45%;
+                width: 2rem;
+                border: solid $color-white;
                 border-width: 0 5px 5px 0;
-                -webkit-transform: rotate(45deg);
-                -ms-transform: rotate(45deg);
-                transform: rotate(45deg);
+                transform: rotate(0);
+                
               }
           }
         //   &:hover input ~ .paymant__checkbox-checkmark {
@@ -86,6 +89,7 @@
     &__info{
         background-color: $color-advert;
         text-align: center;
+        padding: 0 3rem;
     }
 
     &__title{
@@ -103,7 +107,7 @@
         line-height: 1.8rem;
         span{
             background-color: $color-red-2;
-            padding: .7rem 1.5rem;
+            padding: .7rem 1rem;
             border-top-left-radius: 5px;
             border-bottom-left-radius: 5px;
             font-size: 1.6rem;
@@ -114,7 +118,7 @@
         }
         a{
             background-color: $color-blue-1;
-            padding: .7rem 1.5rem;
+            padding: .7rem 1rem;
             border-top-right-radius: 5px;
             border-bottom-right-radius: 5px;
             font-size: 1.6rem;

@@ -663,7 +663,8 @@ body {
     margin-right: .5rem;
     -webkit-border-radius: .5rem;
        -moz-border-radius: .5rem;
-            border-radius: .5rem; }
+            border-radius: .5rem;
+    width: 100%; }
     .paymant__checkbox input {
       position: absolute;
       opacity: 0;
@@ -674,7 +675,16 @@ body {
         background-color: #48c267;
         border: unset; }
       .paymant__checkbox input:checked ~ .paymant__checkbox-checkmark:after {
-        display: block; }
+        display: block;
+        -webkit-transform: rotate(45deg);
+           -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+             -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+        height: 2rem;
+        left: 32%;
+        top: 25%;
+        width: 1.2rem; }
     .paymant__checkbox-checkmark {
       position: absolute;
       top: 0;
@@ -682,25 +692,24 @@ body {
       height: 5rem;
       width: 3.5rem;
       background-color: #212427;
-      border: 1px solid #fff;
+      border: 1px solid #56585B;
       -webkit-border-radius: .5rem;
          -moz-border-radius: .5rem;
               border-radius: .5rem; }
       .paymant__checkbox-checkmark:after {
         content: "";
         position: absolute;
-        display: none;
-        left: 32%;
-        top: 25%;
-        width: 1.2rem;
-        height: 2rem;
-        border: solid white;
+        display: block;
+        left: 20%;
+        top: 45%;
+        width: 2rem;
+        border: solid #fff;
         border-width: 0 5px 5px 0;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-          -o-transform: rotate(45deg);
-             transform: rotate(45deg); }
+        -webkit-transform: rotate(0);
+           -moz-transform: rotate(0);
+            -ms-transform: rotate(0);
+             -o-transform: rotate(0);
+                transform: rotate(0); }
   .paymant__imgBox {
     height: 30.5rem;
     -webkit-box-shadow: inset 0 -80px 25px 20px rgba(0, 0, 0, 0.85);
@@ -716,7 +725,8 @@ body {
     z-index: -2; }
   .paymant__info {
     background-color: #212427;
-    text-align: center; }
+    text-align: center;
+    padding: 0 3rem; }
   .paymant__title {
     color: #fff;
     text-align: center;
@@ -730,7 +740,7 @@ body {
     line-height: 1.8rem; }
     .paymant__hintBox span {
       background-color: #d72b33;
-      padding: .7rem 1.5rem;
+      padding: .7rem 1rem;
       -webkit-border-top-left-radius: 5px;
          -moz-border-radius-topleft: 5px;
               border-top-left-radius: 5px;
@@ -743,7 +753,7 @@ body {
       display: inline-block; }
     .paymant__hintBox a {
       background-color: #437ab8;
-      padding: .7rem 1.5rem;
+      padding: .7rem 1rem;
       -webkit-border-top-right-radius: 5px;
          -moz-border-radius-topright: 5px;
               border-top-right-radius: 5px;
@@ -790,7 +800,7 @@ body {
     background-color: #212427; }
 
 .myDrop {
-  width: 23rem;
+  width: 21rem;
   margin-left: .5rem;
   margin-bottom: unset;
   font-size: 1.6rem;
