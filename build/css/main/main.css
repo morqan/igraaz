@@ -258,6 +258,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #1f2124;
+  color: #fff;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box; }
@@ -631,20 +632,200 @@ body {
             transform: translateX(-50%);
     white-space: nowrap; }
 
-.Rounded_Rectangle_1 {
-  -webkit-border-radius: 18px;
-     -moz-border-radius: 18px;
-          border-radius: 18px;
-  background-color: #212427;
+.paymant {
+  -webkit-border-radius: .5rem;
+     -moz-border-radius: .5rem;
+          border-radius: .5rem;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
      -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
-  position: absolute;
-  left: 699px;
-  top: 175px;
-  width: 226px;
-  height: 172px;
-  z-index: 44; }
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border: 2px solid #56585B; }
+  .paymant__checkbox {
+    display: block;
+    position: relative;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 1.6rem;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    padding-left: 4.5rem;
+    background-color: #282d34 !important;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+       -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    height: 5rem;
+    line-height: 5rem;
+    padding-right: 1.5rem;
+    margin-right: .5rem;
+    -webkit-border-radius: .5rem;
+       -moz-border-radius: .5rem;
+            border-radius: .5rem; }
+    .paymant__checkbox input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0; }
+      .paymant__checkbox input:checked ~ .paymant__checkbox-checkmark {
+        background-color: #48c267;
+        border: unset; }
+      .paymant__checkbox input:checked ~ .paymant__checkbox-checkmark:after {
+        display: block; }
+    .paymant__checkbox-checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 5rem;
+      width: 3.5rem;
+      background-color: #212427;
+      border: 1px solid #fff;
+      -webkit-border-radius: .5rem;
+         -moz-border-radius: .5rem;
+              border-radius: .5rem; }
+      .paymant__checkbox-checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 32%;
+        top: 25%;
+        width: 1.2rem;
+        height: 2rem;
+        border: solid white;
+        border-width: 0 5px 5px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+             transform: rotate(45deg); }
+  .paymant__imgBox {
+    height: 30.5rem;
+    -webkit-box-shadow: inset 0 -80px 25px 20px rgba(0, 0, 0, 0.85);
+       -moz-box-shadow: inset 0 -80px 25px 20px rgba(0, 0, 0, 0.85);
+            box-shadow: inset 0 -80px 25px 20px rgba(0, 0, 0, 0.85);
+    background-color: transparent; }
+  .paymant__img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: -2; }
+  .paymant__info {
+    background-color: #212427;
+    text-align: center; }
+  .paymant__title {
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    display: block;
+    font-weight: bold;
+    line-height: 3rem;
+    margin-bottom: 2.5rem; }
+  .paymant__hintBox {
+    color: #fff;
+    line-height: 1.8rem; }
+    .paymant__hintBox span {
+      background-color: #d72b33;
+      padding: .7rem 1.5rem;
+      -webkit-border-top-left-radius: 5px;
+         -moz-border-radius-topleft: 5px;
+              border-top-left-radius: 5px;
+      -webkit-border-bottom-left-radius: 5px;
+         -moz-border-radius-bottomleft: 5px;
+              border-bottom-left-radius: 5px;
+      font-size: 1.6rem;
+      line-height: 3.6rem;
+      vertical-align: top;
+      display: inline-block; }
+    .paymant__hintBox a {
+      background-color: #437ab8;
+      padding: .7rem 1.5rem;
+      -webkit-border-top-right-radius: 5px;
+         -moz-border-radius-topright: 5px;
+              border-top-right-radius: 5px;
+      -webkit-border-bottom-right-radius: 5px;
+         -moz-border-radius-bottomright: 5px;
+              border-bottom-right-radius: 5px;
+      font-size: 1.6rem;
+      color: #fff;
+      max-width: 14rem;
+      display: inline-block;
+      text-align: left; }
+  .paymant__hint {
+    color: #fff;
+    font-size: 1.6rem; }
+    .paymant__hint span {
+      color: #ff295a; }
+  .paymant__content {
+    color: #fff;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #212427; }
+  .paymant__price {
+    font-size: 2.4rem; }
+  .paymant__date {
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    background-color: #212427; }
+
+.myDrop {
+  width: 23rem;
+  margin-left: .5rem;
+  margin-bottom: unset;
+  font-size: 1.6rem;
+  background-color: #282d34 !important;
+  -webkit-border-radius: 5px !important;
+     -moz-border-radius: 5px !important;
+          border-radius: 5px !important;
+  text-transform: capitalize;
+  text-align: left;
+  color: #fff !important;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem; }
+  .myDrop:hover {
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+       -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5); }
+  .myDrop::after {
+    display: none; }
+  .myDrop i {
+    float: right;
+    font-size: 1.6rem;
+    line-height: 25px; }
+
+.myBtn {
+  font-size: 1.8rem;
+  padding: 1.5rem 3rem;
+  color: #fff;
+  line-height: 1.8rem;
+  margin-bottom: unset;
+  background-color: #ff295a;
+  -webkit-border-radius: 0.5rem !important;
+     -moz-border-radius: 0.5rem !important;
+          border-radius: 0.5rem !important; }
 
 .header {
   background-color: #1a1b1e; }

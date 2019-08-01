@@ -1,0 +1,164 @@
+.paymant {
+    border-radius: .5rem;
+    // background-color: $color-advert;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border: 2px solid $color-gray-border;
+
+    &__checkbox{
+        display: block;
+        position: relative;
+        margin-bottom: 0;
+        cursor: pointer;
+        font-size: 1.6rem;
+        user-select: none;
+        padding-left: 4.5rem;
+        background-color: $color-paymantDrop!important;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+        height: 5rem;
+        line-height: 5rem;
+        padding-right: 1.5rem;
+        margin-right: .5rem;
+        border-radius: .5rem;
+        
+
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+
+            &:checked ~ .paymant__checkbox-checkmark {
+                background-color: $color-green-2;
+                border: unset;
+              }
+            &:checked ~ .paymant__checkbox-checkmark:after {
+                display: block;
+              
+              }
+          }
+        &-checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 5rem;
+            width: 3.5rem;
+            background-color: $color-advert;
+            border: 1px solid #fff;
+           
+            border-radius: .5rem;
+            &:after {
+                content: "";
+                position: absolute;
+                display: none;
+                left: 32%;
+                top: 25%;
+                width: 1.2rem;
+                height: 2rem;
+                border: solid white;
+                border-width: 0 5px 5px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+              }
+          }
+        //   &:hover input ~ .paymant__checkbox-checkmark {
+        //     background-color: #ccc;
+        //   }
+          
+    }
+    &__imgBox{
+        height: 30.5rem;
+        box-shadow: inset 0 -80px 25px 20px rgba(0,0,0,.85);
+        background-color: transparent;
+    }
+
+    &__img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: -2;
+    }
+    
+    &__info{
+        background-color: $color-advert;
+        text-align: center;
+    }
+
+    &__title{
+        color: $color-white;
+        text-align: center;
+        font-size: 3rem;
+        display: block;
+        font-weight: bold;
+        line-height: 3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &__hintBox{
+        color: $color-white;
+        line-height: 1.8rem;
+        span{
+            background-color: $color-red-2;
+            padding: .7rem 1.5rem;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            font-size: 1.6rem;
+            line-height: 3.6rem;
+            vertical-align: top;
+            display: inline-block;
+            
+        }
+        a{
+            background-color: $color-blue-1;
+            padding: .7rem 1.5rem;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            font-size: 1.6rem;
+            color: $color-white;
+            max-width: 14rem;
+         display: inline-block;
+            text-align: left;
+            
+        }
+    }
+
+    &__hint{
+        color: $color-white;
+        font-size: 1.6rem;
+        span{
+            color: $color-darkRed;
+        }
+    }
+
+    &__content{
+        color: #fff;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color-advert;
+      
+    }
+
+    &__price{
+        font-size: 2.4rem;
+    }
+    &__date{
+        color: $color-white;
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+        background-color: $color-advert;
+
+    }
+
+  }
+
+
+ 
+  
