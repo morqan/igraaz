@@ -1,0 +1,18 @@
+.social{
+
+    margin-bottom: 1rem;
+
+    &__list{
+        display: inline-block;
+        &:not(:last-child){
+            margin-right: 2.5rem;
+        }
+        
+    }
+
+    &__link{
+        color: $color-darkRed;
+        font-size: 3.5rem;
+        
+    }
+}
