@@ -1,0 +1,28 @@
+.category{
+
+    &__sortBox{
+        position: relative;
+        margin: 3rem 0;
+        z-index: 9;
+    }
+    &__dropgGroup{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        @include respondmax(md) {
+            display: flex;
+            justify-content: space-between;
+            position: static;
+            transform: translateY(0);
+            margin-top: 2rem;
+        }
+        @include respondmax(sm) {
+            position: static;
+            transform: translateY(0);
+            margin-top: 2rem;
+            display: block;
+        }
+      
+    }
+}

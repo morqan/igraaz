@@ -4,11 +4,11 @@
     color: $color-white;
     line-height: 1.8rem;
     margin-bottom: unset;
-    background-color: $color-darkRed;
+    background-color: $color-red;
     border-radius: .5rem!important;
 
     &:hover{
-        background-color: $color-darkRed;
+        background-color: $color-red;
         color: $color-white;
     }
 }
