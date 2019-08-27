@@ -512,7 +512,7 @@ body {
   overflow: hidden;
   margin-bottom: 2rem; }
   .advertCard__imgBox {
-    height: 165px;
+    height: 16.5rem;
     -webkit-box-shadow: inset 0px -70px 117px 0px rgba(0, 0, 0, 0.82);
        -moz-box-shadow: inset 0px -70px 117px 0px rgba(0, 0, 0, 0.82);
             box-shadow: inset 0px -70px 117px 0px rgba(0, 0, 0, 0.82);
@@ -557,8 +557,60 @@ body {
         -ms-flex-align: center;
             align-items: center;
     background-color: #212427; }
+  .advertCard__infoBox {
+    background-color: #212427; }
+  .advertCard__info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #212427; }
+  .advertCard__categiry {
+    background-color: #d72b33;
+    text-align: center;
+    padding: .5rem 5rem;
+    font-size: 1.4rem;
+    -webkit-border-top-left-radius: .5rem;
+       -moz-border-radius-topleft: .5rem;
+            border-top-left-radius: .5rem;
+    -webkit-border-bottom-left-radius: .5rem;
+       -moz-border-radius-bottomleft: .5rem;
+            border-bottom-left-radius: .5rem; }
+  .advertCard__consol {
+    background-color: #282d34;
+    text-align: center;
+    padding: .5rem 5rem;
+    font-size: 1.4rem; }
+  .advertCard__icon {
+    line-height: 2rem;
+    font-size: 2rem; }
+    .advertCard__icon--blue {
+      color: #00aeef; }
+    .advertCard__icon--gold {
+      color: #ffaa64; }
   .advertCard__price {
     font-size: 2.4rem; }
+  .advertCard__price2 {
+    background-color: #2f353d;
+    text-align: center;
+    padding: .5rem 5rem;
+    font-size: 1.4rem;
+    -webkit-border-top-right-radius: .5rem;
+       -moz-border-radius-topright: .5rem;
+            border-top-right-radius: .5rem;
+    -webkit-border-bottom-right-radius: .5rem;
+       -moz-border-radius-bottomright: .5rem;
+            border-bottom-right-radius: .5rem; }
+  .advertCard__numeral {
+    font-size: 2rem;
+    line-height: 2rem; }
   .advertCard__date {
     color: #fff;
     display: block;
@@ -941,7 +993,7 @@ body {
     color: #fff; }
 
 .social {
-  margin-bottom: 1rem; }
+  padding-bottom: 1rem; }
   .social__list {
     display: inline-block; }
     .social__list:not(:last-child) {
@@ -1135,3 +1187,83 @@ body {
               transform: translateY(0);
       margin-top: 2rem;
       display: block; } }
+
+.advertInner {
+  -webkit-border-radius: .5rem;
+     -moz-border-radius: .5rem;
+          border-radius: .5rem;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+  border: 2px solid #56585B; }
+  .advertInner__imgBox {
+    height: 32rem;
+    -webkit-box-shadow: inset 0px -70px 117px 0px rgba(0, 0, 0, 0.82);
+       -moz-box-shadow: inset 0px -70px 117px 0px rgba(0, 0, 0, 0.82);
+            box-shadow: inset 0px -70px 117px 0px rgba(0, 0, 0, 0.82);
+    background-color: transparent; }
+  .advertInner__img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: -2; }
+  .advertInner__infoBox {
+    background-color: #212427; }
+  .advertInner__title {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-top: -1.5rem; }
+  .advertInner__info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem 1.5rem;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #212427; }
+  .advertInner__categiry {
+    background-color: #d72b33;
+    text-align: center;
+    padding: .5rem 5.3rem;
+    font-size: 1.4rem;
+    -webkit-border-top-left-radius: .5rem;
+       -moz-border-radius-topleft: .5rem;
+            border-top-left-radius: .5rem;
+    -webkit-border-bottom-left-radius: .5rem;
+       -moz-border-radius-bottomleft: .5rem;
+            border-bottom-left-radius: .5rem; }
+  .advertInner__consol {
+    background-color: #282d34;
+    text-align: center;
+    padding: .5rem 5rem;
+    font-size: 1.4rem; }
+  .advertInner__icon {
+    line-height: 2rem;
+    font-size: 2rem; }
+    .advertInner__icon--blue {
+      color: #00aeef; }
+    .advertInner__icon--gold {
+      color: #ffaa64; }
+  .advertInner__price {
+    background-color: #2f353d;
+    text-align: center;
+    padding: .5rem 5.3rem;
+    font-size: 1.4rem;
+    -webkit-border-top-right-radius: .5rem;
+       -moz-border-radius-topright: .5rem;
+            border-top-right-radius: .5rem;
+    -webkit-border-bottom-right-radius: .5rem;
+       -moz-border-radius-bottomright: .5rem;
+            border-bottom-right-radius: .5rem; }
+  .advertInner__numeral {
+    font-size: 2rem;
+    line-height: 2rem; }

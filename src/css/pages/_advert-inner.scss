@@ -1,12 +1,11 @@
-.advertCard {
-    border-radius: 1.8rem;
-    // background-color: $color-advert;
+.advertInner{
+    border-radius: .5rem;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
     margin-bottom: 2rem;
-    
+    border: 2px solid $color-gray-border;
+
     &__imgBox{
-        height: 16.5rem;
+        height: 32rem;
         box-shadow: inset 0px -70px 117px 0px rgba(0,0,0,0.82);
         background-color: transparent;
     }
@@ -18,38 +17,20 @@
         position: relative;
         z-index: -2;
     }
-  
-    &__title{
-        color: $color-white;
-        text-align: center;
-        font-size: 1.8rem;
-        width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: block;
-        padding: 0 1.5rem;
-        font-weight: bold;
-        line-height: 1.8rem;
-        margin-top: -1.5rem;
-    }
-    &__content{
-        color: #fff;
-        padding: 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: $color-advert;
-      
-    }
 
     &__infoBox{
         background-color: $color-advert;
     }
 
+    &__title{
+        text-align: center;
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-top: -1.5rem;
+    }
     &__info{
         display: flex;
-        padding: 1rem;
+        padding: 1rem 1.5rem; 
         justify-content: center;
         background-color: $color-advert;
     }
@@ -57,7 +38,7 @@
     &__categiry{
         background-color: $color-red-2;
         text-align: center;
-        padding: .5rem 5rem;
+        padding: .5rem 5.3rem;
         font-size: 1.4rem;
         border-top-left-radius: .5rem;
         border-bottom-left-radius: .5rem;
@@ -68,6 +49,8 @@
         text-align: center;
         padding: .5rem 5rem;
         font-size: 1.4rem;
+        
+        
         
     }
     &__icon{
@@ -80,14 +63,11 @@
             color: $color-gold;
         }
     }
+   
     &__price{
-        font-size: 2.4rem;
-    }
-
-    &__price2{
         background-color: $color-blue-2;
         text-align: center;
-        padding: .5rem 5rem;
+        padding: .5rem 5.3rem;
         font-size: 1.4rem;
         border-top-right-radius: .5rem;
         border-bottom-right-radius: .5rem;
@@ -96,19 +76,4 @@
         font-size: 2rem;
         line-height: 2rem;
     }
-   
-
-    &__date{
-        color: $color-white;
-        display: block;
-        text-align: center;
-        font-size: 1.2rem;
-        padding-bottom: 1rem;
-        background-color: $color-advert;
-
-    }
-
-  }
-
-
- 
+}
