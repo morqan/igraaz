@@ -30,7 +30,7 @@ body{
 	background-color: $color-secondary;
 	color: $color-white;
 	box-sizing: border-box;
-	p{
+	p,h1,h2,h3,h4,h5,h6{
 		margin-bottom: unset;
 	}
 	ul{
