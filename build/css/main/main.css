@@ -1399,7 +1399,7 @@ body {
   .advertInner__tabPanel {
     padding: 2rem;
     text-align: justify;
-    height: 24rem;
+    height: 31rem;
     overflow: scroll;
     font-size: 1.4rem; }
   .advertInner__tab {
@@ -1410,3 +1410,39 @@ body {
        -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
             box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
     border: 2px solid #56585B; }
+    @media (max-width: 575px) {
+      .advertInner__tab {
+        padding-bottom: 1rem;
+        margin-bottom: 2rem; } }
+  .advertInner__listItem {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    padding-bottom: 2rem; }
+  .advertInner__listLink {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    background-color: #282d34;
+    padding: 1rem 2rem;
+    -webkit-border-radius: .5rem;
+       -moz-border-radius: .5rem;
+            border-radius: .5rem;
+    display: block;
+    margin-bottom: .5rem;
+    line-height: 1.4rem;
+    position: relative; }
+    .advertInner__listLink i {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+         -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+           -o-transform: translateY(-50%);
+              transform: translateY(-50%);
+      left: 1.5rem;
+      color: #ffcd00;
+      font-size: 2rem; }
+    .advertInner__listLink:hover {
+      color: #fff;
+      text-decoration: unset; }

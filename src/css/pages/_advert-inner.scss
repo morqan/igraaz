@@ -118,7 +118,6 @@
         border-radius: .5rem;
         justify-content: center;
         @include respondmax(sm) {
-            
             margin-bottom: 1rem;
         }
     }
@@ -183,16 +182,57 @@
     &__tabPanel{
         padding: 2rem;
         text-align: justify;
-        height: 24rem;
+        height: 31rem;
         overflow: scroll;
         font-size: 1.4rem;
     }
 
     &__tab{
        
+       
         border-radius: .5rem;
         box-shadow: 0 0 20px 0 rgba(0,0,0,.5);
-        border: 2px solid #56585B;
+        border: 2px solid $color-gray-border;
+
+        @include respondmax(sm) {
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__listItem{
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        padding-bottom: 2rem;
+    }
+
+    &__listLink{
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: $color-white;
+        text-align: center;
+        background-color: $color-paymantDrop;
+        padding: 1rem 2rem;
+        border-radius: .5rem;
+        display: block;
+        margin-bottom: .5rem;
+        line-height: 1.4rem;
+        position: relative;
+
+        i{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 1.5rem;
+            color: $color-gold-2;
+            font-size: 2rem;
+        }
+
+        &:hover{
+            color: $color-white;
+            text-decoration: unset;
+        }
+
     }
     
 }
@@ -200,3 +240,4 @@
 
 
   
+
