@@ -22,6 +22,7 @@
 
 .box__title{
 	color: $color-white;
+	margin: 2rem 0;
 	font-size: 1.6rem;
 	display: grid;
     width: 100%;
@@ -39,7 +40,15 @@
 	}
 }
 
+.note{
+	font-size: 1.6rem;
+	color: $color-white;
+	text-align: center;
 
+	span{
+		color: $color-red;
+	}
+}
 
 
   

@@ -1,0 +1,63 @@
+.myRadio {
+    display: block;
+    position: relative;
+    padding-left: 3.5rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    user-select: none;
+    margin-bottom: 0;
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      }
+
+    &__checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: transparent;
+        border: 2px solid $color-red;
+        border-radius: 50%;
+
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+      }
+
+  }
+  
+
+  
+  
+  /* On mouse-over, add a grey background color */
+//   .myRadio:hover input ~ .myRadio__checkmark {
+//     background-color: #ccc;
+//   }
+  
+  /* When the radio button is checked, add a blue background */
+  .myRadio input:checked ~ .myRadio__checkmark {
+    background-color: transparent;
+  }
+
+  
+  /* Show the indicator (dot/circle) when checked */
+  .myRadio input:checked ~ .myRadio__checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .myRadio .myRadio__checkmark:after {
+       top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: $color-red;
+  }

@@ -1,0 +1,27 @@
+.form{
+
+    &__control{
+        background-color: $color-paymantDrop;
+        color: $color-white;
+        border: unset;
+        font-size: 1.6rem;
+        padding: 2.4rem 1.5rem;
+        border-radius: .5rem;
+        margin-bottom: 1rem;
+
+        &:focus{
+            background-color: $color-paymantDrop;
+            border: unset;
+            box-shadow: unset;
+            color: $color-white;
+        }
+
+        &::placeholder {
+            color: $color-white;
+            padding: 1.5rem;
+        }
+    }
+}
+
+
+  

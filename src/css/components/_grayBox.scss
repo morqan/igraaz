@@ -1,0 +1,16 @@
+.grayBox{
+    padding: 1.5rem 0;
+    background-color: $color-advert;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.5);
+    border: 2px solid $color-gray-border;
+    border-radius: .5rem;
+
+    &__content{
+        padding: 0 4rem;
+        @include respondmax(sm) {
+            padding: 0 2rem;
+        }
+    }
+
+}

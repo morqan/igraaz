@@ -268,6 +268,8 @@ body {
     padding-left: unset;
     list-style: none;
     margin-bottom: unset; }
+  body a:hover {
+    text-decoration: unset; }
 
 .azn {
   font-family: jaznb; }
@@ -296,6 +298,7 @@ body {
 
 .box__title {
   color: #fff;
+  margin: 2rem 0;
   font-size: 1.6rem;
   display: -ms-grid;
   display: grid;
@@ -315,6 +318,16 @@ body {
   .box__title::after {
     content: '';
     border-top: 2px solid #56585B; }
+
+.note {
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center; }
+  .note span {
+    color: #ff295a; }
+
+.mb-20 {
+  margin-bottom: 2rem; }
 
 @font-face {
   font-family: jaznb;
@@ -987,10 +1000,40 @@ body {
   background-color: #ff295a;
   -webkit-border-radius: 0.5rem !important;
      -moz-border-radius: 0.5rem !important;
-          border-radius: 0.5rem !important; }
+          border-radius: 0.5rem !important;
+  border: unset;
+  text-transform: uppercase;
+  width: 100%;
+  display: inline-block;
+  text-align: center; }
   .myBtn:hover {
     background-color: #ff295a;
     color: #fff; }
+  .myBtn__social {
+    font-size: 1.3rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem; }
+    .myBtn__social i {
+      margin-right: 1.5rem;
+      font-size: 2.5rem; }
+    .myBtn__social--fb {
+      background-color: #4578be; }
+    .myBtn__social--tw {
+      background-color: #39a9bd; }
+    .myBtn__social--ins {
+      background-color: #cc2f96; }
+    .myBtn__social--reddit {
+      background-color: #ff4500; }
 
 .social {
   padding-bottom: 1rem; }
@@ -1055,6 +1098,134 @@ body {
        -moz-transform: scale(2.5);
          -o-transform: scale(2.5);
             transform: scale(2.5); } }
+
+.grayBox {
+  padding: 1.5rem 0;
+  background-color: #212427;
+  text-align: center;
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  border: 2px solid #56585B;
+  -webkit-border-radius: .5rem;
+     -moz-border-radius: .5rem;
+          border-radius: .5rem; }
+  .grayBox__content {
+    padding: 0 4rem; }
+    @media (max-width: 575px) {
+      .grayBox__content {
+        padding: 0 2rem; } }
+
+.form__control {
+  background-color: #282d34;
+  color: #fff;
+  border: unset;
+  font-size: 1.6rem;
+  padding: 2.4rem 1.5rem;
+  -webkit-border-radius: .5rem;
+     -moz-border-radius: .5rem;
+          border-radius: .5rem;
+  margin-bottom: 1rem; }
+  .form__control:focus {
+    background-color: #282d34;
+    border: unset;
+    -webkit-box-shadow: unset;
+       -moz-box-shadow: unset;
+            box-shadow: unset;
+    color: #fff; }
+  .form__control::-webkit-input-placeholder {
+    color: #fff;
+    padding: 1.5rem; }
+  .form__control:-moz-placeholder {
+    color: #fff;
+    padding: 1.5rem; }
+  .form__control::-moz-placeholder {
+    color: #fff;
+    padding: 1.5rem; }
+  .form__control:-ms-input-placeholder {
+    color: #fff;
+    padding: 1.5rem; }
+  .form__control::placeholder {
+    color: #fff;
+    padding: 1.5rem; }
+
+.inputBox {
+  background-color: #282d34;
+  color: #fff;
+  border: unset;
+  font-size: 1.6rem;
+  padding: 1.4rem 1.5rem;
+  -webkit-border-radius: .5rem;
+     -moz-border-radius: .5rem;
+          border-radius: .5rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: normal; }
+
+.myRadio {
+  display: block;
+  position: relative;
+  padding-left: 3.5rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-bottom: 0; }
+  .myRadio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer; }
+  .myRadio__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 2px solid #ff295a;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%; }
+    .myRadio__checkmark:after {
+      content: "";
+      position: absolute;
+      display: none; }
+
+/* On mouse-over, add a grey background color */
+/* When the radio button is checked, add a blue background */
+.myRadio input:checked ~ .myRadio__checkmark {
+  background-color: transparent; }
+
+/* Show the indicator (dot/circle) when checked */
+.myRadio input:checked ~ .myRadio__checkmark:after {
+  display: block; }
+
+/* Style the indicator (dot/circle) */
+.myRadio .myRadio__checkmark:after {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  background: #ff295a; }
 
 .header {
   background-color: #1a1b1e; }

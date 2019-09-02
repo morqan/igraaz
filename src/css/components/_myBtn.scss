@@ -6,9 +6,40 @@
     margin-bottom: unset;
     background-color: $color-red;
     border-radius: .5rem!important;
-
+    border: unset;
+    text-transform: uppercase;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    
     &:hover{
         background-color: $color-red;
         color: $color-white;
+    }
+
+    &__social{
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        padding: 1rem 2rem;
+        margin-bottom:1rem; 
+
+        i{
+            margin-right: 1.5rem;
+            font-size: 2.5rem;
+        }
+
+        &--fb{
+            background-color: $color-blue-4;
+        }
+        &--tw{
+            background-color: $color-blue-5;
+        }
+        &--ins{
+            background-color: $color-purple;
+        }
+        &--reddit{
+            background-color: $color-orange;
+        }
     }
 }
