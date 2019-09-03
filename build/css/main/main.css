@@ -1117,7 +1117,7 @@ body {
         padding: 0 2rem; } }
 
 .form__control {
-  background-color: #282d34;
+  background-color: #282d34 !important;
   color: #fff;
   border: unset;
   font-size: 1.6rem;
@@ -1182,6 +1182,9 @@ body {
       -ms-user-select: none;
           user-select: none;
   margin-bottom: 0; }
+  @media (max-width: 575px) {
+    .myRadio {
+      padding-left: 3rem; } }
   .myRadio input {
     position: absolute;
     opacity: 0;
@@ -1201,31 +1204,24 @@ body {
       content: "";
       position: absolute;
       display: none; }
-
-/* On mouse-over, add a grey background color */
-/* When the radio button is checked, add a blue background */
-.myRadio input:checked ~ .myRadio__checkmark {
-  background-color: transparent; }
-
-/* Show the indicator (dot/circle) when checked */
-.myRadio input:checked ~ .myRadio__checkmark:after {
-  display: block; }
-
-/* Style the indicator (dot/circle) */
-.myRadio .myRadio__checkmark:after {
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-     -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-       -o-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 8px;
-  height: 8px;
-  -webkit-border-radius: 50%;
-     -moz-border-radius: 50%;
-          border-radius: 50%;
-  background: #ff295a; }
+  .myRadio input:checked ~ .myRadio__checkmark {
+    background-color: transparent; }
+  .myRadio input:checked ~ .myRadio__checkmark:after {
+    display: block; }
+  .myRadio .myRadio__checkmark:after {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    background: #ff295a; }
 
 .header {
   background-color: #1a1b1e; }

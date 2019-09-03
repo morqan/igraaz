@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="libs/components-font-awesome/css/brands.min.css">
     <link rel="stylesheet" href="libs/components-font-awesome/css/solid.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
- 
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
     <link rel="stylesheet" href="css/main/main.min.css">
     
 </head>
@@ -84,19 +84,19 @@
                     <p class="note mb-5"><span>QEYD: </span> Elan yerləşdirmək üçün ilk öncə aşağıdakı məlumatları
                         dolduraraq qeydiyyatdan keçməyiniz xahiş olunur.</p>
                     <div class="form-row">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6">
                             <a class="myBtn myBtn__social myBtn__social--fb" href="javascript:void(0)"><i
                                     class="fab fa-facebook-f"></i> FACEBOOK İLƏ GİRİŞ ET</a>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6">
                             <a class="myBtn myBtn__social myBtn__social--tw" href="javascript:void(0)"><i
                                     class="fab fa-twitter"></i> TWITTER İLƏ GİRİŞ ET</a>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6">
                             <a class="myBtn myBtn__social myBtn__social--ins" href="javascript:void(0)"><i
                                     class="fab fa-instagram"></i>INSTAGRAM İLƏ GİRİŞ ET</a>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6">
                             <a class="myBtn myBtn__social myBtn__social--reddit" href="javascript:void(0)"><i
                                     class="fab fa-reddit-alien"></i>REDDIT İLƏ GİRİŞ ET</a>
                         </div>
@@ -106,19 +106,19 @@
                 <div class="grayBox__content">
                     <form>
                         <div class="form-row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <input type="text" class="form-control form__control " placeholder="Ad">
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <input type="text" class="form-control form__control " placeholder="Soyad">
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <input type="email" class="form-control form__control " placeholder="E-poçt adresi">
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <input type="text" class="form-control form__control " placeholder="Mobil nömrə">
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="inputBox">
                                     <span class="inputBox__fieldType">Cinsiyyət</span>
                                     <label class="myRadio">Kişi
@@ -131,17 +131,17 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <input type="text" v-model="selectedDate" class="form-control form__control " placeholder="Doğum tarixi">
+                            <div class="col-lg-4 col-md-6">
+                                <input type="text" id="bd" class="form-control form__control " placeholder="Doğum tarixi">
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <input type="password" class="form-control form__control " placeholder="Şifrə">
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <input type="password" class="form-control form__control "
                                     placeholder="Şifrənin təkrarı">
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <button type="submit" class="myBtn">GİRİŞ ET</button>
                             </div>
                         </div>
@@ -153,22 +153,18 @@
     </section>
 </main>
 
-<script>
-        export default {
-          name: 'LabeledDatepicker',
-          data: () => ({
-            selectedDate: null
-          })
-        }
-      </script>
+
+
+
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="libs/jquery/dist/jquery.min.js"><\/script>')</script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <script src="libs/owl.carousel/dist/owl.carousel.min.js" type="text/javascript" charset="utf-8" async defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
       <!-- <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script> -->
       <!-- <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script> -->
-      <script src="js/all.min.js"></script>
+      <script src="js/all.js"></script>
 
       <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
       <script>
