@@ -929,7 +929,6 @@ body {
 
 .myDrop {
   width: 100%;
-  margin-left: .5rem;
   margin-bottom: unset;
   font-size: 1.6rem;
   background-color: #282d34 !important;
@@ -1118,6 +1117,9 @@ body {
 
 .form__control {
   background-color: #282d34 !important;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   color: #fff;
   border: unset;
   font-size: 1.6rem;
@@ -1169,12 +1171,15 @@ body {
      -moz-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   line-height: normal; }
 
 .myRadio {
   display: block;
   position: relative;
-  padding-left: 3.5rem;
+  padding-left: 2.8rem;
   cursor: pointer;
   font-size: 1.6rem;
   -webkit-user-select: none;
@@ -1222,6 +1227,53 @@ body {
        -moz-border-radius: 50%;
             border-radius: 50%;
     background: #ff295a; }
+
+.membership {
+  max-width: 52rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto; }
+  @media (max-width: 575px) {
+    .membership {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+         -moz-box-orient: vertical;
+         -moz-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  .membership__link {
+    padding: 1.5rem 1rem;
+    display: inline-block;
+    -webkit-border-radius: .5rem;
+       -moz-border-radius: .5rem;
+            border-radius: .5rem;
+    background-color: #282d34;
+    width: 24rem; }
+    @media (max-width: 575px) {
+      .membership__link {
+        margin-bottom: 2rem; } }
+    .membership__link i {
+      font-size: 4rem; }
+    .membership__link span {
+      font-size: 1.8rem;
+      color: #fff;
+      display: block;
+      line-height: normal;
+      margin-top: 1.5rem; }
+    .membership__link:first-child i {
+      color: #5bd698;
+      padding-left: 1.5rem; }
+    .membership__link:last-child i {
+      color: #d14949; }
 
 .header {
   background-color: #1a1b1e; }

@@ -1,0 +1,42 @@
+.membership{
+    max-width: 52rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+   
+    @include respondmax(sm) {
+        flex-direction: column;        
+    }
+    
+    &__link{
+        padding: 1.5rem 1rem;
+        display: inline-block;
+        border-radius: .5rem;
+        background-color: $color-paymantDrop;
+        width: 24rem;
+        @include respondmax(sm) {
+            margin-bottom: 2rem;
+        }
+
+        i{
+                
+            font-size: 4rem;        
+        }
+        span{
+            font-size: 1.8rem;
+            color: $color-white;
+            display: block;
+            line-height: normal;
+            margin-top: 1.5rem;
+        }
+
+        &:first-child i{            
+            color: $color-green-4;
+            padding-left: 1.5rem;
+        }
+        &:last-child i{            
+            color: $color-red-3;
+        }
+
+    }
+} 
