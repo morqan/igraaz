@@ -9,6 +9,11 @@
         padding: 2.4rem 1.5rem;
         border-radius: .5rem;
         margin-bottom: 1rem;
+        line-height: normal;
+        &--textarea{
+            padding: 1.5rem;
+            height: 10rem!important;
+        }
 
         &:focus{
             background-color: $color-paymantDrop;
@@ -21,7 +26,10 @@
             color: $color-white;
             padding: 1.5rem;
         }
+
     }
+
+   
 }
 
 
