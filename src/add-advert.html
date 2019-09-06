@@ -24,14 +24,16 @@
                 </div>
 
             </div>
-            <div class="grayBox mb-4">
-                <div class="grayBox__content">
-                    <h1 class="mb-20">ŞƏXSİ MƏLUMATLAR</h1>
-                    <p class="note mb-5"><span>QEYD: </span>Aşağıdakı məlumatlar qeydiyyat məlumatlarından götürülüb.
-                        Siz elan dərc edildikdə görünəcək şəxsi məlumatlarda düzəliş
-                        edə bilərsiniz.</p>
 
-                    <form>
+           
+                <div class="grayBox mb-4">
+                    <div class="grayBox__content">
+                        <h1 class="mb-20">ŞƏXSİ MƏLUMATLAR</h1>
+                        <p class="note mb-5"><span>QEYD: </span>Aşağıdakı məlumatlar qeydiyyat məlumatlarından
+                            götürülüb.
+                            Siz elan dərc edildikdə görünəcək şəxsi məlumatlarda düzəliş
+                            edə bilərsiniz.</p>
+
                         <div class="form-row">
                             <div class="col-lg-4 col-md-6">
                                 <input type="text" class="form-control form__control " placeholder="Ad">
@@ -48,41 +50,134 @@
                                 <button type="submit" class="myBtn">NÖVBƏTİ MƏRHƏLƏYƏ KEÇ</button>
                             </div>
                         </div>
-                    </form>
-                </div>
-            </div>
-            <div class="grayBox mb-4">
-                <div class="grayBox__content">
-                    <h1 class="mb-20">ELAN MƏLUMATLARI</h1>
-                    <p class="note mb-5"><span>QEYD: </span> Aşağıdakı məlumatlar qeydiyyat məlumatlarından götürülüb.
-                        Siz elan dərc edildikdə görünəcək şəxsi məlumatlarda düzəliş
-                        edə bilərsiniz.</p>
 
-                    <form>
-                        <div class="form-row">
-                            <div class="col-lg-6">
-                                <div class="inputBox">
-                                    <span class="inputBox__fieldType">Elanın növü</span>
-                                    <label class="myCheckbox">Satıram
-                                        <input type="checkbox" checked="checked" name="checkbox">
-                                        <span class="myCheckbox__checkmark"></span>
-                                    </label>
-                                    <label class="myCheckbox">Icarəyə verirəm
-                                        <input type="checkbox" name="checkbox">
-                                        <span class="myCheckbox__checkmark"></span>
-                                    </label>
-                                    <label class="myCheckbox">Barter edirəm
-                                        <input type="checkbox" name="checkbox">
-                                        <span class="myCheckbox__checkmark"></span>
-                                    </label>
-                                </div>
+                    </div>
+                </div>
+                <div class="grayBox mb-4">
+                    <div class="grayBox__content">
+                        <h1 class="mb-20">ELAN MƏLUMATLARI</h1>
+                        <p class="note mb-5"><span>QEYD: </span> Aşağıdakı məlumatlar qeydiyyat məlumatlarından
+                            götürülüb.
+                            Siz elan dərc edildikdə görünəcək şəxsi məlumatlarda düzəliş
+                            edə bilərsiniz.</p>
+                        <form action="/file-upload"
+                        class=""
+                        id="my-awesome-dropzone">
+
+                            <div class="form-row">
+                                    <div class="col-lg-6">
+                                        <div class="inputBox">
+                                            <span class="inputBox__fieldType">Elanın növü</span>
+                                            <label class="myCheckbox">Satıram
+                                                <input type="checkbox" checked="checked" name="checkbox">
+                                                <span class="myCheckbox__checkmark"></span>
+                                            </label>
+                                            <label class="myCheckbox">Icarəyə verirəm
+                                                <input type="checkbox" name="checkbox">
+                                                <span class="myCheckbox__checkmark"></span>
+                                            </label>
+                                            <label class="myCheckbox">Barter edirəm
+                                                <input type="checkbox" name="checkbox">
+                                                <span class="myCheckbox__checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="btn-group paymant__btnGroup ">
+        
+                                            <button type="button" class="btn dropdown-toggle myDrop " data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Kateqoriya
+                                                <i class="fas fa-arrow-down"></i>
+                                            </button>
+                                            <div class="dropdown-menu myDrop__menu">
+                                                <a class="dropdown-item myDrop__item" href="#">Action</a>
+                                                <a class="dropdown-item myDrop__item" href="#">Another action</a>
+                                                <a class="dropdown-item myDrop__item" href="#">Something else here</a>
+                                                <a class="dropdown-item myDrop__item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <input type="text" class="form-control form__control " placeholder="Elanın adı">
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="inputBox">
+                                            <span class="inputBox__fieldType">Vəziyyəti</span>
+                                            <label class="myRadio">Yeni
+                                                <input type="radio" checked="checked" name="radio">
+                                                <span class="myRadio__checkmark"></span>
+                                            </label>
+                                            <label class="myRadio">İşlənmiş
+                                                <input type="radio" name="radio">
+                                                <span class="myRadio__checkmark"></span>
+                                            </label>
+        
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="btn-group paymant__btnGroup ">
+                                            <button type="button" class="btn dropdown-toggle myDrop " data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Şəhər
+                                                <i class="fas fa-arrow-down"></i>
+                                            </button>
+                                            <div class="dropdown-menu myDrop__menu">
+                                                <a class="dropdown-item myDrop__item" href="#">Action</a>
+                                                <a class="dropdown-item myDrop__item" href="#">Another action</a>
+                                                <a class="dropdown-item myDrop__item" href="#">Something else here</a>
+                                                <a class="dropdown-item myDrop__item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="btn-group paymant__btnGroup ">
+                                            <button type="button" class="btn dropdown-toggle myDrop " data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Platforma
+                                                <i class="fas fa-arrow-down"></i>
+                                            </button>
+                                            <div class="dropdown-menu myDrop__menu">
+                                                <a class="dropdown-item myDrop__item" href="#">Action</a>
+                                                <a class="dropdown-item myDrop__item" href="#">Another action</a>
+                                                <a class="dropdown-item myDrop__item" href="#">Something else here</a>
+                                                <a class="dropdown-item myDrop__item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="text" class="form-control form__control " placeholder="Qiymət">
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <textarea type="text" class="form-control form__control form__control--textarea"
+                                            placeholder="Məzmun">
+                                                    </textarea>
+                                    </div>
+                                    <div class="col">
+
+                                           <div class="dropzone" id="IDhtmlcont"></div>
+                                            
+                                    </div>
+                                    <div class="col">
+                                        <button type="submit" class="myBtn">GİRİŞ ET</button>
+                                    </div>
+        
                             </div>
+                        </form>
+                    </div>
+                    <h3 class="box__title">İCARƏ MƏLUMATLARI</h3>
+                    <div class="grayBox__content">
+
+                        <div class="form-row">
+                            <div class="col-lg-3">
+                                <input type="text" class="form-control form__control " placeholder="İcarə qiyməti">
+                            </div>
+
                             <div class="col-lg-3">
                                 <div class="btn-group paymant__btnGroup ">
-
                                     <button type="button" class="btn dropdown-toggle myDrop " data-toggle="dropdown"
                                         aria-haspopup="true" aria-expanded="false">
-                                        Kateqoriya
+                                        İcarə müddəti
                                         <i class="fas fa-arrow-down"></i>
                                     </button>
                                     <div class="dropdown-menu myDrop__menu">
@@ -93,28 +188,43 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
-                                <input type="text" class="form-control form__control " placeholder="Elanın adı">
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control form__control " placeholder="Əlavə qeydlər">
                             </div>
-                            <div class="col-4">
+                        </div>
+                        
+                    </div>
+                    <h3 class="box__title">BARTER MƏLUMATLARI</h3>
+                    <div class="grayBox__content">
+
+                        <div class="form-row">
+                            <div class="col-lg-8">
                                 <div class="inputBox">
-                                    <span class="inputBox__fieldType">Vəziyyəti</span>
-                                    <label class="myRadio">Yeni
+                                    <span class="inputBox__fieldType">Barter növü</span>
+                                    <label class="myRadio">Başa-baş
                                         <input type="radio" checked="checked" name="radio">
                                         <span class="myRadio__checkmark"></span>
                                     </label>
-                                    <label class="myRadio">İşlənmiş
+                                    <label class="myRadio">Üstündə pul tələb edirəm
                                         <input type="radio" name="radio">
                                         <span class="myRadio__checkmark"></span>
                                     </label>
-
+                                    <label class="myRadio">Üstündə pul verirəm
+                                        <input type="radio" name="radio">
+                                        <span class="myRadio__checkmark"></span>
+                                    </label>
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-lg-4">
+                                    
+                                <input type="text" class="form-control form__control " placeholder="Məbləğ">
+                            </div>
+
+                            <div class="col-lg-3">
                                 <div class="btn-group paymant__btnGroup ">
                                     <button type="button" class="btn dropdown-toggle myDrop " data-toggle="dropdown"
                                         aria-haspopup="true" aria-expanded="false">
-                                        Şəhər
+                                        İcarə müddəti
                                         <i class="fas fa-arrow-down"></i>
                                     </button>
                                     <div class="dropdown-menu myDrop__menu">
@@ -125,7 +235,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-lg-3">
                                 <div class="btn-group paymant__btnGroup ">
                                     <button type="button" class="btn dropdown-toggle myDrop " data-toggle="dropdown"
                                         aria-haspopup="true" aria-expanded="false">
@@ -140,24 +250,23 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
-                                <input type="text" class="form-control form__control " placeholder="Qiymət">
+                            <div class="col-lg-3">
+                                <input type="text" class="form-control form__control " placeholder="Oyunun adı">
                             </div>
-                            <div class="col-lg-9">
-                                <textarea type="text" class="form-control form__control form__control--textarea" placeholder="Məzmun">
-                                    </textarea>
+                            <div class="col-lg-3">
+                                <button type="button" class="myBtn myBtn__advert"><i class="fas fa-plus"></i> Yenisini
+                                    əlavə
+                                    et</button>
                             </div>
-                            <div class="col">
-                                <button type="submit" class="myBtn">GİRİŞ ET</button>
+                            <div class="col-lg-12">
+                                <button type="submit" class="myBtn">ELANI DƏRC ET</button>
                             </div>
-                            <div class="col">
-                                <button type="submit" class="myBtn">GİRİŞ ET</button>
-                            </div>
-                          
                         </div>
-                    </form>
+
+                    </div>
                 </div>
-            </div>
+       
+        </div>
         </div>
     </section>
 </main>

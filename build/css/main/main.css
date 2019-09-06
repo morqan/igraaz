@@ -1008,6 +1008,18 @@ body {
   .myBtn:hover {
     background-color: #ff295a;
     color: #fff; }
+  .myBtn__advert {
+    background-color: #282d34;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+       -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    text-transform: capitalize;
+    text-align: left; }
+    .myBtn__advert i {
+      margin-right: 1rem;
+      font-size: 1.8rem; }
   .myBtn__social {
     font-size: 1.3rem;
     display: -webkit-box;

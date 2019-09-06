@@ -17,6 +17,19 @@
         color: $color-white;
     }
 
+    &__advert{
+        background-color: $color-paymantDrop;
+        box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
+        font-size: 1.6rem;
+        padding: 1.5rem;
+        text-transform: capitalize;
+        text-align: left;
+        i{
+            margin-right: 1rem;
+            font-size: 1.8rem;
+        }
+    }
+
     &__social{
         font-size: 1.3rem;
         display: flex;
