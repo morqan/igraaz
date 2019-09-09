@@ -964,7 +964,8 @@ body {
   @media (max-width: 575px) {
     .myDrop {
       width: 100%;
-      margin-left: 0; } }
+      margin-left: 0;
+      margin-bottom: 1rem; } }
   .myDrop:hover {
     -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
        -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
@@ -1005,6 +1006,9 @@ body {
   width: 100%;
   display: inline-block;
   text-align: center; }
+  @media (max-width: 575px) {
+    .myBtn {
+      margin-bottom: 1rem; } }
   .myBtn:hover {
     background-color: #ff295a;
     color: #fff; }
@@ -1143,7 +1147,11 @@ body {
   line-height: normal; }
   .form__control--textarea {
     padding: 1.5rem;
-    height: 10rem !important; }
+    height: 10rem !important;
+    margin-bottom: 0; }
+    @media (max-width: 575px) {
+      .form__control--textarea {
+        margin-bottom: 1rem; } }
   .form__control:focus {
     background-color: #282d34;
     border: unset;
@@ -1191,6 +1199,21 @@ body {
      -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   line-height: normal; }
+  @media (max-width: 575px) {
+    .inputBox {
+      margin-bottom: 1rem;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+         -moz-box-orient: vertical;
+         -moz-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      text-align: left; } }
+  @media (max-width: 575px) {
+    .inputBox__fieldType {
+      margin-bottom: 1rem;
+      text-align: left; } }
 
 .myRadio {
   display: block;
@@ -1205,7 +1228,8 @@ body {
   margin-bottom: 0; }
   @media (max-width: 575px) {
     .myRadio {
-      padding-left: 3rem; } }
+      padding-left: 3rem;
+      margin-bottom: 1rem; } }
   .myRadio input {
     position: absolute;
     opacity: 0;
@@ -1265,7 +1289,12 @@ body {
          -moz-box-orient: vertical;
          -moz-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; } }
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+         -moz-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   .membership__link {
     padding: 1.5rem 1rem;
     display: inline-block;
@@ -1276,7 +1305,8 @@ body {
     width: 24rem; }
     @media (max-width: 575px) {
       .membership__link {
-        margin-bottom: 2rem; } }
+        margin-bottom: 2rem;
+        width: 100%; } }
     .membership__link i {
       font-size: 4rem; }
     .membership__link span {
@@ -1302,6 +1332,10 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none; }
+  @media (max-width: 575px) {
+    .myCheckbox {
+      padding-left: 3rem;
+      margin-bottom: 1rem; } }
   .myCheckbox input {
     position: absolute;
     opacity: 0;
@@ -1340,31 +1374,70 @@ body {
          -o-transform: rotate(45deg);
             transform: rotate(45deg); }
 
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-  background-color: #ccc; }
+.myFileInp {
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-size: 1.6rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  height: 10rem;
+  color: #fff; }
+  .myFileInp input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+  .myFileInp__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+       -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: .5rem;
+       -moz-border-radius: .5rem;
+            border-radius: .5rem;
+    background-color: #282d34; }
+    .myFileInp__checkmark i {
+      font-size: 6rem;
+      margin-top: 1rem;
+      color: #1e2228;
+      display: block; }
+    .myFileInp__checkmark:after {
+      content: "";
+      position: absolute;
+      display: none; }
+  .myFileInp__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+       -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: .5rem;
+       -moz-border-radius: .5rem;
+            border-radius: .5rem;
+    opacity: 0; }
 
-/* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
-  background-color: #2196F3; }
+.popup__content {
+  background-color: #1a1b1e;
+  -webkit-border-radius: .5rem;
+     -moz-border-radius: .5rem;
+          border-radius: .5rem; }
 
-/* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
-  display: block; }
-
-/* Style the checkmark/indicator */
-.container .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
-          transform: rotate(45deg); }
+.popup__header {
+  border: unset; }
 
 .header {
   background-color: #1a1b1e; }

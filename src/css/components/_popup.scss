@@ -1,0 +1,12 @@
+.popup{
+
+    &__content{
+        background-color: $color-primary;
+        border-radius: .5rem;
+    }
+
+    &__header{
+        border: unset;
+    }
+    
+}

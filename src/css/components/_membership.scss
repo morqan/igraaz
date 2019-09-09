@@ -5,7 +5,8 @@
     margin: 0 auto;
    
     @include respondmax(sm) {
-        flex-direction: column;        
+        flex-direction: column;    
+        justify-content: center;    
     }
     
     &__link{
@@ -16,6 +17,7 @@
         width: 24rem;
         @include respondmax(sm) {
             margin-bottom: 2rem;
+            width: 100%;
         }
 
         i{

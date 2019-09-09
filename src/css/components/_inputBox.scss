@@ -11,8 +11,18 @@
     box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
     line-height: normal;
 
-    // &__fieldType{
-    //     margin-right: 2rem;
-    // }
+
+    @include respondmax(sm) {
+        margin-bottom: 1rem;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    &__fieldType{
+        @include respondmax(sm) {
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+    }
     
 }
