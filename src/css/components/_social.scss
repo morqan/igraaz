@@ -1,7 +1,5 @@
 .social{
 
-    padding-bottom: 1rem;
-
     &__list{
         display: inline-block;
         &:not(:last-child){
@@ -13,6 +11,10 @@
     &__link{
         color: $color-red;
         font-size: 3.5rem;
+
+        &--white{
+            color: $color-white;
+        }
         
     }
 }

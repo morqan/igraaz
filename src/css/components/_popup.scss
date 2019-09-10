@@ -7,6 +7,36 @@
 
     &__header{
         border: unset;
+        justify-content: right;
+        padding: 2rem;
+    }
+
+    &__close{
+        background-color: $color-red!important;
+        margin: unset!important;
+        opacity: 1;
+        border-radius: .6rem;
+        color: $color-white;
+        font-size: 2rem;
+        line-height: 2rem;
+        padding: .5rem 1rem!important;
+
+        i{
+            line-height: 2.2rem;
+        }
+      
+    }
+
+    &__body{
+        padding: 2rem 10rem 3rem 10rem;
+        @include respondmax(sm) {
+            padding: 2rem 1rem 3rem 1rem;
+        }
+    }
+
+    &__fogetPass{
+        color: $color-white;
+        font-size: 1.8rem;
     }
     
 }

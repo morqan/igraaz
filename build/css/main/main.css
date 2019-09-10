@@ -329,6 +329,12 @@ body {
 .mb-20 {
   margin-bottom: 2rem; }
 
+.pb-10 {
+  padding-bottom: 1rem; }
+
+.pt-40 {
+  padding-top: 4rem; }
+
 @font-face {
   font-family: jaznb;
   src: url("../../fonts/jaznb.eot");
@@ -1050,15 +1056,16 @@ body {
     .myBtn__social--reddit {
       background-color: #ff4500; }
 
-.social {
-  padding-bottom: 1rem; }
-  .social__list {
-    display: inline-block; }
-    .social__list:not(:last-child) {
-      margin-right: 2.5rem; }
-  .social__link {
-    color: #ff295a;
-    font-size: 3.5rem; }
+.social__list {
+  display: inline-block; }
+  .social__list:not(:last-child) {
+    margin-right: 2.5rem; }
+
+.social__link {
+  color: #ff295a;
+  font-size: 3.5rem; }
+  .social__link--white {
+    color: #fff; }
 
 .ripple-effect {
   position: relative;
@@ -1437,7 +1444,62 @@ body {
           border-radius: .5rem; }
 
 .popup__header {
-  border: unset; }
+  border: unset;
+  -webkit-box-pack: right;
+  -webkit-justify-content: right;
+     -moz-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  padding: 2rem; }
+
+.popup__close {
+  background-color: #ff295a !important;
+  margin: unset !important;
+  opacity: 1;
+  -webkit-border-radius: .6rem;
+     -moz-border-radius: .6rem;
+          border-radius: .6rem;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding: 0.5rem 1rem !important; }
+  .popup__close i {
+    line-height: 2.2rem; }
+
+.popup__body {
+  padding: 2rem 10rem 3rem 10rem; }
+  @media (max-width: 575px) {
+    .popup__body {
+      padding: 2rem 1rem 3rem 1rem; } }
+
+.popup__fogetPass {
+  color: #fff;
+  font-size: 1.8rem; }
+
+.footer__top {
+  height: 6rem;
+  background-color: #282828; }
+
+.footer__bottom {
+  height: 5rem;
+  background-color: #000; }
+
+.footer__about {
+  background-color: #ff295a;
+  padding: 2.5rem; }
+
+.footer__logoBox {
+  padding: 1.5rem 1.5rem 4rem 1.5rem;
+  text-align: center; }
+
+.footer__content {
+  font-size: 1.4rem;
+  text-align: justify;
+  padding-bottom: 2rem; }
+
+.footer__link {
+  font-size: 1.6rem;
+  color: #fff; }
 
 .header {
   background-color: #1a1b1e; }

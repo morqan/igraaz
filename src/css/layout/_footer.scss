@@ -1,0 +1,34 @@
+.footer{
+
+
+    &__top{
+        height: 6rem;
+        background-color: $color-brown;
+    }
+
+    &__bottom{
+        height: 5rem;
+        background-color: $color-black;
+    }
+
+    &__about{
+        background-color: $color-red;
+        padding: 2.5rem;
+    }
+
+    &__logoBox{
+        padding: 1.5rem 1.5rem 4rem 1.5rem;
+        text-align: center;
+    }
+
+    &__content{
+        font-size: 1.4rem;
+        text-align: justify;
+        padding-bottom: 2rem;
+    }
+
+    &__link{
+        font-size: 1.6rem;
+        color: $color-white;
+    }
+}
