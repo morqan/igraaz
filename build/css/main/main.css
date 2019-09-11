@@ -1486,7 +1486,32 @@ body {
 
 .footer__about {
   background-color: #ff295a;
-  padding: 2.5rem; }
+  padding: 2.5rem;
+  position: relative; }
+  .footer__about::after {
+    content: "";
+    -webkit-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+       -moz-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    background-color: #fc5d81;
+    -webkit-transform: skewX(-45deg);
+       -moz-transform: skewX(-45deg);
+        -ms-transform: skewX(-45deg);
+         -o-transform: skewX(-45deg);
+            transform: skewX(-45deg);
+    width: 100%;
+    height: 6rem;
+    position: absolute;
+    top: -6rem;
+    left: 3rem; }
+    @media (max-width: 575px) {
+      .footer__about::after {
+        left: 0;
+        -webkit-transform: skewX(0);
+           -moz-transform: skewX(0);
+            -ms-transform: skewX(0);
+             -o-transform: skewX(0);
+                transform: skewX(0); } }
 
 .footer__logoBox {
   padding: 1.5rem 1.5rem 4rem 1.5rem;
@@ -1499,7 +1524,50 @@ body {
 
 .footer__link {
   font-size: 1.6rem;
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 2rem;
+  display: inline-block;
+  line-height: normal; }
+  .footer__link:hover {
+    color: #ff295a; }
+  .footer__link:after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    width: 0;
+    /* Change this to whatever width you want to have before hover. */
+    padding-top: 10px;
+    /* This creates some space between the element and the border. */
+    border-bottom: 1px solid #ff295a;
+    /* This creates the border. Replace black with whatever color you want. */
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    transition: .5s;
+    /* This establishes the amount of time in seconds the animation should take from start to finish */ }
+  .footer__link:hover:after {
+    width: 100%;
+    /* This will be the new width of your border when on hover */ }
+
+.footer__title {
+  margin-bottom: 3rem; }
+  .footer__title:after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    width: 30%;
+    /* Change this to whatever width you want to have before hover. */
+    padding-top: 10px;
+    /* This creates some space between the element and the border. */
+    border-bottom: 1px solid #fff;
+    /* This creates the border. Replace black with whatever color you want. */
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    transition: .5s;
+    /* This establishes the amount of time in seconds the animation should take from start to finish */ }
 
 .header {
   background-color: #1a1b1e; }

@@ -14,6 +14,23 @@
     &__about{
         background-color: $color-red;
         padding: 2.5rem;
+        position: relative;
+        &::after{
+            content:"";
+            box-shadow: 0 3rem 6rem rgba(0,0,0,0.1);
+            background-color:$color-red-light;
+            transform: skewX(-45deg);
+            width: 100%;
+            height: 6rem;
+            position: absolute;
+            top: -6rem;
+            left: 3rem;
+
+            @include respondmax(sm) {
+                left: 0;
+                transform: skewX(0);
+            }
+        }
     }
 
     &__logoBox{
@@ -30,5 +47,47 @@
     &__link{
         font-size: 1.6rem;
         color: $color-white;
+        margin-bottom: 2rem;
+        display: inline-block;
+        line-height: normal;
+
+        &:hover{
+            color: $color-red;
+        }
+
+        &:after {
+            content: ""; /* This is necessary for the pseudo element to work. */ 
+            display: block; /* This will put the pseudo element on its own line. */
+            width: 0; /* Change this to whatever width you want to have before hover. */
+            padding-top: 10px; /* This creates some space between the element and the border. */
+            border-bottom: 1px solid $color-red; /* This creates the border. Replace black with whatever color you want. */
+            transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+           
+        }
+        &:hover:after {
+            width: 100%; /* This will be the new width of your border when on hover */
+        }
+    }
+
+    &__title{
+
+        margin-bottom: 3rem;
+        &:after {
+            content: ""; /* This is necessary for the pseudo element to work. */ 
+            display: block; /* This will put the pseudo element on its own line. */
+            width: 30%; /* Change this to whatever width you want to have before hover. */
+            padding-top: 10px; /* This creates some space between the element and the border. */
+            border-bottom: 1px solid $color-white; /* This creates the border. Replace black with whatever color you want. */
+            transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+           
+        }
+       
     }
 }
+
+
+
+
+
+  
+  
