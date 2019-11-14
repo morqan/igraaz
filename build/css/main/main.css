@@ -1968,9 +1968,27 @@ body {
   .profile__mainImgBox {
     height: 30rem;
     position: relative; }
+    .profile__mainImgBox__btn-group {
+      position: absolute;
+      right: 20px;
+      bottom: 20px; }
+      .profile__mainImgBox__btn-group .friend-btn {
+        background-color: #ff295a;
+        color: #ffffff;
+        padding: 5px 10px;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-right: 20px; }
+      .profile__mainImgBox__btn-group .letter-btn {
+        background-color: #212427;
+        color: #ffffff;
+        padding: 5px 10px;
+        font-size: 14px;
+        text-transform: uppercase; }
   .profile__mainImg {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    position: relative; }
   .profile__userImgBox {
     position: relative;
     width: 100%;
@@ -2020,3 +2038,128 @@ body {
     -webkit-border-radius: .5rem;
        -moz-border-radius: .5rem;
             border-radius: .5rem; }
+  .profile__achievement {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 10px; }
+    .profile__achievement__img-gorup {
+      margin-top: 20px; }
+      .profile__achievement__img-gorup .achievement-img {
+        margin-bottom: 14px; }
+  .profile__game {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 10px; }
+    .profile__game--heading {
+      width: 100%;
+      text-align: center;
+      border-bottom: 2px solid #56585B;
+      line-height: 0.1em;
+      margin: 30px 0;
+      color: #777;
+      text-transform: uppercase; }
+      .profile__game--heading span {
+        background: #212427;
+        padding: 0 10px; }
+    .profile__game__div {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+         -moz-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin: 0 20px; }
+      .profile__game__div--img-group {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+           -moz-box-orient: vertical;
+           -moz-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 100px; }
+        .profile__game__div--img-group .game-group {
+          position: relative;
+          width: 100px; }
+          .profile__game__div--img-group .game-group--img {
+            width: 100px; }
+          .profile__game__div--img-group .game-group--div {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+               -moz-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            padding: 5px 0; }
+            .profile__game__div--img-group .game-group--div span {
+              color: #00aeef;
+              font-size: 14px;
+              font-weight: bold; }
+        .profile__game__div--img-group .game-name {
+          font-size: 14px;
+          word-wrap: break-word;
+          margin-top: 10px;
+          text-align: center;
+          font-weight: bold; }
+    .profile__game__btn {
+      color: #8899b1;
+      font-size: 14px;
+      font-weight: bold;
+      background-color: #282d34;
+      margin: 10px 20px 0;
+      border: none;
+      outline: none; }
+      .profile__game__btn:hover {
+        color: #ffffff; }
+      .profile__game__btn:focus {
+        -webkit-box-shadow: none;
+           -moz-box-shadow: none;
+                box-shadow: none; }

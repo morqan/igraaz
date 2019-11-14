@@ -1,18 +1,42 @@
-.profile{
+.profile {
 
     padding: 5rem;
 
-    &__mainImgBox{
+    &__mainImgBox {
         height: 30rem;
+        position: relative;
+
+        &__btn-group {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+
+            .friend-btn {
+                background-color: $color-red;
+                color: #ffffff;
+                padding: 5px 10px;
+                font-size: 14px;
+                text-transform: uppercase;
+                margin-right: 20px;
+            }
+
+            .letter-btn {
+                background-color: $color-advert;
+                color: #ffffff;
+                padding: 5px 10px;
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__mainImg {
+        width: 100%;
+        height: 100%;
         position: relative;
     }
 
-    &__mainImg{
-        width: 100%;
-        height: 100%;
-    }
-
-    &__userImgBox{
+    &__userImgBox {
         position: relative;
         width: 100%;
         height: 17.6rem;
@@ -26,42 +50,44 @@
         right: 0rem;
     }
 
-    &__userImg{
+    &__userImg {
         width: 100%;
         height: 100%;
-        border:3px solid $color-gray-border;
+        border: 3px solid $color-gray-border;
         border-radius: 50%;
     }
 
-    &__userName{
+    &__userName {
         font-size: 2.4rem;
         line-height: normal;
         font-weight: bold;
     }
-    &__userNameHashtag{
+
+    &__userNameHashtag {
         font-size: 1.8rem;
         color: $color-gray-2;
         text-align: center;
         line-height: normal;
         margin-bottom: 1.5rem;
-        i{
+
+        i {
             margin-left: 1rem;
         }
     }
 
-    &__userLevel{
+    &__userLevel {
         font-size: 1.6rem;
         text-align: center;
         margin-bottom: 1rem;
     }
 
-    &__userProgress{
+    &__userProgress {
         width: 100%;
-        background-color:$color-gray-border;
+        background-color: $color-gray-border;
         border-radius: .5rem;
     }
 
-    &__userBar{
+    &__userBar {
         width: 30%;
         height: 1rem;
         background-color: $color-green-5;
@@ -71,8 +97,112 @@
         border-radius: .5rem;
     }
 
+    &__achievement {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        &__img-gorup {
+            margin-top: 20px;
+
+            .achievement-img {
+                margin-bottom: 14px;
+            }
+        }
+    }
+
+    &__game {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        &--heading {
+            width: 100%;
+            text-align: center;
+            border-bottom: 2px solid $color-gray-border;
+            line-height: 0.1em;
+            margin: 30px 0;
+            color: $color-gray;
+            text-transform: uppercase;
+
+            span {
+                background: $color-advert;
+                padding: 0 10px;
+            }
+        }
+
+        &__div {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 20px;
+
+            &--img-group {
+                display: flex;
+                flex-direction: column;
+                width: 100px;
+
+                .game-group {
+
+                    position: relative;
+                    width: 100px;
+
+                    &--img {
+                        width: 100px;
+                    }
+
+                    &--div {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        background-color: rgba(0, 0, 0, 0.8);
+                        display: flex;
+                        justify-content: center;
+                        padding: 5px 0;
+
+                        span {
+                            color: #00aeef;
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                .game-name {
+                    font-size: 14px;
+                    word-wrap: break-word;
+                    margin-top: 10px;
+                    text-align: center;
+                    font-weight: bold;
+                }
+            }
+
+        }
+
+        &__btn {
+            color: #8899b1;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: $color-paymantDrop;
+            margin: 10px 20px 0;
+            border: none;
+            outline: none;
+
+            &:hover {
+                color: #ffffff;
+            }
+
+            &:focus {
+               box-shadow: none;
+            }
+           
+        
+            
+        }
+
+
+    }
+
 }
-  
-
-
-  
