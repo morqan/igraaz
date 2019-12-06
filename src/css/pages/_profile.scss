@@ -1,15 +1,59 @@
 .profile {
 
-    padding: 5rem;
+    padding: 5rem 0;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-bottom: 10px;
+        border-left: 2px solid $color-gray-border;
+        border-right: 2px solid $color-gray-border;
+        border-bottom: 2px solid $color-gray-border;
+        transform: translateY(2px);
+    }
+    &__item {
+     
+        &:not(:last-child){
+            margin-right: 1rem;
+       }
+    }
+    &__link {
+        color: #ffffff;
+        font-size: 16px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        &:hover {
+            background-color: #282d34;
+            color: #ffffff;
+            transition: all .3s;
+        }
+    }
+   
+    
 
     &__mainImgBox {
         height: 30rem;
         position: relative;
 
+        @include respondmax(sm) {
+            height: 18rem;
+        }
+
         &__btn-group {
             position: absolute;
             right: 20px;
             bottom: 20px;
+
+            @include respondmax(sm) {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                bottom: 12px;
+                width: 90%;
+                right: 0;
+            }
 
             .friend-btn {
                 background-color: $color-red;
@@ -18,6 +62,12 @@
                 font-size: 14px;
                 text-transform: uppercase;
                 margin-right: 20px;
+
+                @include respondmax(sm) {
+                    width: 90%;
+                    margin-right: 0;
+                    order: 2;
+                }
             }
 
             .letter-btn {
@@ -26,6 +76,13 @@
                 padding: 5px 10px;
                 font-size: 14px;
                 text-transform: uppercase;
+
+                @include respondmax(sm) {
+                    width: 90%;
+                    margin-top: 10px;
+                    order: 1;
+                    margin-bottom: 15px;
+                }
             }
         }
     }
@@ -34,6 +91,10 @@
         width: 100%;
         height: 100%;
         position: relative;
+
+        @include respondmax(sm) {
+            height: auto;
+        }
     }
 
     &__userImgBox {
@@ -42,12 +103,28 @@
         height: 17.6rem;
         text-align: center;
         margin-bottom: 1rem;
+
+        @include respondmax(xl) {
+            height: auto;
+        }
     }
 
     &__userImgProgres {
         position: absolute;
         bottom: 1rem;
         right: 0rem;
+
+        @include respondmax(xl) {
+            bottom: 0;
+        }
+
+        @include respondmax(lg) {
+            right: 25rem;
+        }
+
+        @include respondmax(sm) {
+            right: 3rem;
+        }
     }
 
     &__userImg {
@@ -55,12 +132,28 @@
         height: 100%;
         border: 3px solid $color-gray-border;
         border-radius: 50%;
+
+        @include respondmax(xl) {
+            height: auto;
+        }
+
+        @include respondmax(lg) {
+            width: 30%;
+        }
+
+        @include respondmax(sm) {
+            width: 65%;
+        }
     }
 
     &__userName {
         font-size: 2.4rem;
         line-height: normal;
         font-weight: bold;
+
+        @include respondmax(lg) {
+            text-align: center;
+        }
     }
 
     &__userNameHashtag {
@@ -97,6 +190,92 @@
         border-radius: .5rem;
     }
 
+    &__userLocation {
+        color: #777777;
+        font-size: 14px;
+        margin: 10px 0;
+
+        @include respondmax(sm) {
+            text-align: center;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    &__userRegistration {
+        color: #777777;
+        font-size: 14px;
+        margin: 10px 0;
+
+        @include respondmax(sm) {
+            text-align: center;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    &__userWork {
+        color: #777777;
+        font-size: 14px;
+        margin: 10px 0;
+
+        @include respondmax(sm) {
+            text-align: center;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    &__userAccounts {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        &--heading {
+            text-align: center;
+        }
+
+        &__div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-self: self-start;
+            margin-top: 10px;
+
+
+            @include respondmax(lg) {
+                margin-bottom: 10px;
+                flex-direction: row;
+                align-self: auto;
+            }
+
+            @include respondmax(sm) {
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+
+
+
+
+
+            .accounts-img-group {
+                margin: 5px 0;
+                align-self: center;
+
+                @include respondmax(sm) {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
     &__achievement {
         display: flex;
         flex-direction: column;
@@ -106,8 +285,42 @@
         &__img-gorup {
             margin-top: 20px;
 
+            @include respondmax(sm) {
+                margin: 20px 10px 0;
+            }
+
+
+
             .achievement-img {
-                margin-bottom: 14px;
+
+                &:not(:last-child) {
+                    margin-bottom: 14px;
+                }
+
+            }
+        }
+    }
+
+    &__friends {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        &__div {
+            margin: 20px 15px 0;
+           
+            &--img-group {
+                margin: 5px 0;
+                .friend-img {
+                    width: auto;
+                }
+
+                .friend-name {
+                    font-size: 10px;
+                    margin-top: 3px;
+                   font-weight: bold;
+                }
             }
         }
     }
@@ -126,6 +339,7 @@
             margin: 30px 0;
             color: $color-gray;
             text-transform: uppercase;
+            font-size: 16px;
 
             span {
                 background: $color-advert;
@@ -134,75 +348,128 @@
         }
 
         &__div {
-            display: flex;
-            justify-content: space-between;
-            margin: 0 20px;
+            // display: flex;
+            // justify-content: space-between;
+            // margin: 0 15px;
+            // flex-wrap: wrap;
+            margin: 20px 15px 0;
+            &--img-group {
+                display: flex;
+                flex-direction: column;
+                width: auto;    
+                margin: 5px 0;
+               
+            }
+
+        }
+    }
+
+    &__watch {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        &__div {
+            // display: flex;
+            // justify-content: space-between;
+            // flex-wrap: wrap;
+            margin: 20px 15px 0;
+           
 
             &--img-group {
                 display: flex;
                 flex-direction: column;
-                width: 100px;
+                align-items: center;
+                width: auto;
+              margin: 5px 0;
 
-                .game-group {
-
-                    position: relative;
-                    width: 100px;
-
-                    &--img {
-                        width: 100px;
-                    }
-
-                    &--div {
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        width: 100%;
-                        background-color: rgba(0, 0, 0, 0.8);
-                        display: flex;
-                        justify-content: center;
-                        padding: 5px 0;
-
-                        span {
-                            color: #00aeef;
-                            font-size: 14px;
-                            font-weight: bold;
-                        }
-                    }
+                @include respondmax(sm) {
+                    margin: 5px;
                 }
 
-                .game-name {
-                    font-size: 14px;
-                    word-wrap: break-word;
-                    margin-top: 10px;
-                    text-align: center;
-                    font-weight: bold;
-                }
+
+               
+
             }
 
         }
 
-        &__btn {
-            color: #8899b1;
-            font-size: 14px;
-            font-weight: bold;
-            background-color: $color-paymantDrop;
-            margin: 10px 20px 0;
-            border: none;
-            outline: none;
 
-            &:hover {
-                color: #ffffff;
-            }
-
-            &:focus {
-               box-shadow: none;
-            }
-           
-        
-            
-        }
 
 
     }
 
+
+
+
+    &__btn {
+        color: #8899b1;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: $color-paymantDrop;
+        margin: 10px 20px 0;
+        border: none;
+        outline: none;
+
+        &:hover {
+            color: #ffffff;
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+
+
+
+    }
+
+}
+
+.game-group {
+
+    position: relative;
+    width: 100px;
+
+    
+
+    &--img {
+        width: 100px;
+
+      
+    }
+
+    &--div {
+        position: absolute;
+        bottom: 27%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        padding: 5px 0;
+
+        span {
+            color: #00aeef;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+
+    &--name{
+      
+            font-size: 14px;
+            word-wrap: break-word;
+            margin-top: 10px;
+            text-align: center;
+            font-weight: bold;
+            width: 100px;
+        
+    }
+}
+
+
+
+.profile-heading {
+    font-size: 18px;
 }
