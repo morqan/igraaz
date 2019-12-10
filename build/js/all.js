@@ -27,6 +27,7 @@ $( document ).ready(function() {
         disableMobile: "true"
     });
 });
+
 $(document).ready(function(){
     $('.main__carousel').owlCarousel({
         loop:true,

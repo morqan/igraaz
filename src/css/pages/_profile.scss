@@ -4,11 +4,25 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        padding-bottom: 10px;
+        padding: 10px;
         border-left: 2px solid $color-gray-border;
         border-right: 2px solid $color-gray-border;
         border-bottom: 2px solid $color-gray-border;
-    
+        transform: translateY(2px);
+
+        @include respondmax(lg){
+            justify-content: center;
+        }
+        @include respondmax(md){
+            padding: 10px 5px;
+
+        }
+        @include respondmax(sm){
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          padding-bottom: 0;
+
+        }
     }
    
     &__item {
@@ -16,6 +30,10 @@
         &:not(:last-child){
             margin-right: 1rem;
        }
+       @include respondmax(sm){
+       margin-bottom: 1rem;
+
+      }
     }
     &__link {
         color: #ffffff;
@@ -27,11 +45,13 @@
             color: #ffffff;
             transition: all .3s;
         }
+        @include respondmax(md){
+            font-size: 12px;
+    padding: 5px;
+        }
     }
    
-    &__form-row{
-        transform: translateY(-2px);
-    }
+    
 
     &__mainImgBox {
         height: 30rem;
@@ -93,9 +113,7 @@
         height: 100%;
         position: relative;
 
-        @include respondmax(sm) {
-            height: auto;
-        }
+        
     }
 
     &__userImgBox {
@@ -121,12 +139,11 @@
             bottom: 0;
         }
 
-        @include respondmax(lg) {
-            right: 25rem;
-        }
+       
 
         @include respondmax(sm) {
             right: 3rem;
+            width: 3rem;
         }
     }
 
@@ -140,9 +157,7 @@
             height: auto;
         }
 
-        @include respondmax(lg) {
-            width: 30%;
-        }
+      
 
         @include respondmax(sm) {
             width: 65%;
