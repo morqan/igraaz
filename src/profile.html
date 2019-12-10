@@ -5,7 +5,16 @@
 <main>
     <section class="profile">
         <div class="container">
-            <div class="form-row">
+         
+                    <ul class="profile__list">
+                            <li class="profile__item"><a class="profile__link" href="#">Ümumi məlumat</a></li>
+                            <li class="profile__item"><a class="profile__link" href="#">Dostlar(65)</a></li>
+                            <li class="profile__item"><a class="profile__link" href="#">Oyunlar(1275)</a></li>
+                            <li class="profile__item"><a class="profile__link" href="#">Nəaliyyətlər(12)</a></li>
+                            <li class="profile__item"><a class="profile__link" href="#">İzlədikləri(8)</a></li>
+                        </ul>
+           
+            <div class="form-row profile__form-row">
                 <div class="col-lg-2">
                     <div class="profile__userInfoBox">
                         <div class="profile__userImgBox">
@@ -18,6 +27,28 @@
                         <div class="profile__userProgress">
                             <div class="profile__userBar"></div>
                         </div>
+                        <p class="profile__userLocation"><span>Azərbaycan</span>'da yaşayır</p>
+                        <p class="profile__userRegistration"><span>Qeydiyyat tarixi:</span> 4 mart 2019</p>
+                        <p class="profile__userWork"><span>İşlədiyi yer:</span> Bizim Game Zone</p>
+
+                        <div class="profile__userAccounts">
+                            <h4 class="profile__userAccounts--heading profile-heading">Hesablar <i
+                                    class="fas fa-info-circle"></i></h4>
+                            <div class="profile__userAccounts__div">
+                                <div class="accounts-img-group">
+                                    <img src="img/steam-logo.png" alt="">
+                                </div>
+                                <div class="accounts-img-group">
+                                    <img src="img/Origin.svg.png" alt="">
+                                </div>
+                                <div class="accounts-img-group">
+                                    <img src="img/Uplay_Logo.png" alt="">
+                                </div>
+                                <div class="accounts-img-group">
+                                    <img src="img/xbox live.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-10">
@@ -25,9 +56,9 @@
                         <div class="profile__mainImgBox">
                             <img class="profile__mainImg" src="img/profile-main.jpg" alt="">
                             <div class="profile__mainImgBox__btn-group">
-                                <button type="submit" class="btn friend-btn"><i class="fas fa-user mr-2"></i>Dostluq
+                                <button type="submit" class="btn friend-btn  ripple-effect"><i class="fas fa-user mr-2"></i>Dostluq
                                     təklif et</button>
-                                <button type="submit" class=" btn letter-btn"><i class="fas fa-envelope mr-2"></i>Mesaj
+                                <button type="submit" class=" btn letter-btn ripple-effect"><i class="fas fa-envelope mr-2"></i>Mesaj
                                     göndər</button>
                             </div>
 
@@ -36,105 +67,247 @@
                     <div class="row">
                         <div class="col-lg-5">
                             <div class="grayBox profile__achievement">
-                                <h4>Nəaliyyətlər <i class="fas fa-info-circle"></i></h4>
+                                <h4 class="profile-heading">Nəaliyyətlər <i class="fas fa-info-circle"></i></h4>
                                 <div class="profile__achievement__img-gorup">
-                                    <img src="img/archivements.png" alt="achievement" class="achievement-img">
-                                    <img src="img/archivements.png" alt="achievement">
+                                    <div class="achievement-img"><img src="img/archivements.png" alt="achievement"
+                                            class="img-fluid"></div>
+                                    <div class="achievement-img"><img src="img/archivements.png" alt="achievement"
+                                            class="img-fluid"></div>
+
+
                                 </div>
+                            </div>
+
+                            <div class="grayBox profile__friends">
+                                <h4 class="profile-heading">Dostlar (21 ortaq) <i class="fas fa-info-circle"></i></h4>
+                                <div class="profile__friends__div row">
+                                       
+                                    <div class="profile__friends__div--img-group col-sm-6 col-md-3 col-lg-4 ">
+                                        <div class="friend-img">
+                                            <img src="img/hacibey.png" alt="hacibey" class="img-fluid">
+                                        </div>
+                                        <div class="friend-name">Hacıbəy Heydərli</div>
+                                    </div>
+                                    <div class="profile__friends__div--img-group col-sm-6 col-md-3 col-lg-4 ">
+                                        <div class="friend-img">
+                                            <img src="img/hacibey.png" alt="hacibey" class="img-fluid">
+                                        </div>
+                                        <div class="friend-name">Hacıbəy Heydərli</div>
+                                    </div>
+                                    <div class="profile__friends__div--img-group col-sm-6 col-md-3 col-lg-4 ">
+                                        <div class="friend-img">
+                                            <img src="img/hacibey.png" alt="hacibey" class="img-fluid">
+                                        </div>
+                                        <div class="friend-name">Hacıbəy Heydərli</div>
+                                    </div>
+                                    <div class="profile__friends__div--img-group col-sm-6 col-md-3 col-lg-4 ">
+                                        <div class="friend-img">
+                                            <img src="img/hacibey.png" alt="hacibey" class="img-fluid">
+                                        </div>
+                                        <div class="friend-name">Hacıbəy Heydərli</div>
+                                    </div>
+                                    <div class="profile__friends__div--img-group col-sm-6 col-md-3 col-lg-4 ">
+                                        <div class="friend-img">
+                                            <img src="img/hacibey.png" alt="hacibey" class="img-fluid">
+                                        </div>
+                                        <div class="friend-name">Hacıbəy Heydərli</div>
+                                    </div>
+                                    <div class="profile__friends__div--img-group col-sm-6 col-md-3 col-lg-4">
+                                        <div class="friend-img">
+                                            <img src="img/hacibey.png" alt="hacibey" class="img-fluid">
+                                        </div>
+                                        <div class="friend-name">Hacıbəy Heydərli</div>
+                                    </div>
+                                    <div class="profile__friends__div--img-group col-sm-6 col-md-3 col-lg-4">
+                                        <div class="friend-img">
+                                            <img src="img/hacibey.png" alt="hacibey" class="img-fluid">
+                                        </div>
+                                        <div class="friend-name">Hacıbəy Heydərli</div>
+                                    </div>
+
+
+                                </div>
+
+                                <button type="submit" class="btn profile__btn ripple-effect">+ Bütün oyunları gör (1234)</button>
                             </div>
                         </div>
                         <div class="col-lg-7">
                             <div class="grayBox profile__game">
-                                <h4>Oyunlar (5 Ortaq) <i class="fas fa-info-circle"></i></h4>
+                                <h4 class="profile-heading">Oyunlar (5 Ortaq) <i class="fas fa-info-circle"></i></h4>
                                 <h4 class="profile__game--heading"><span>Ortaq Oyunlar</span></h4>
-                                <div class="profile__game__div">
-                                    <div class="profile__game__div--img-group">
+                                <div class="profile__game__div row">
+                                    <div class="profile__game__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
                                         <div class="game-group">
                                             <img src="img/farchy.png" alt="farcy" class="game-group--img">
                                             <div class="game-group--div">
                                                 <img src="img/playstation.png" alt="">
                                                 <span>PS4</span>
                                             </div>
+                                            <p class="game-group--name">Far Cry New Dawn</p>
                                         </div>
-                                        <div  class="game-name">Far Cry New Dawn</div>
                                     </div>
-                                    <div class="profile__game__div--img-group">
-                                            <div class="game-group">
-                                                <img src="img/farchy.png" alt="farcy" class="game-group--img">
-                                                <div class="game-group--div">
-                                                    <img src="img/playstation.png" alt="">
-                                                    <span>PS4</span>
-                                                </div>
+                                    <div class="profile__game__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                        <div class="game-group">
+                                            <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                            <div class="game-group--div">
+                                                <img src="img/playstation.png" alt="">
+                                                <span>PS4</span>
                                             </div>
-                                            <div  class="game-name">Far Cry New Dawn</div>
+                                            <p class="game-group--name">Far Cry New Dawn</p>
                                         </div>
-                                        <div class="profile__game__div--img-group">
-                                                <div class="game-group">
-                                                    <img src="img/farchy.png" alt="farcy" class="game-group--img">
-                                                    <div class="game-group--div">
-                                                        <img src="img/playstation.png" alt="">
-                                                        <span>PS4</span>
-                                                    </div>
-                                                </div>
-                                                <div class="game-name">Far Cry New Dawn</div>
+                                    </div>
+                                    <div class="profile__game__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                        <div class="game-group">
+                                            <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                            <div class="game-group--div">
+                                                <img src="img/playstation.png" alt="">
+                                                <span>PS4</span>
                                             </div>
-                                            <div class="profile__game__div--img-group">
-                                                    <div class="game-group">
-                                                        <img src="img/farchy.png" alt="farcy" class="game-group--img">
-                                                        <div class="game-group--div">
-                                                            <img src="img/playstation.png" alt="">
-                                                            <span>PS4</span>
-                                                        </div>
-                                                    </div>
-                                                    <div  class="game-name">Far Cry New Dawn</div>
-                                                </div>
+                                            <p class="game-group--name">Far Cry New Dawn</p>
+                                        </div>
+                                    </div>
+                                    <div class="profile__game__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                        <div class="game-group">
+                                            <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                            <div class="game-group--div">
+                                                <img src="img/playstation.png" alt="">
+                                                <span>PS4</span>
+                                            </div>
+                                            <p class="game-group--name">Far Cry New Dawn</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                
-                                <h4 class="profile__game--heading"><span>Digər Oyunlar</span></h4>
-                                <div class="profile__game__div">
-                                        <div class="profile__game__div--img-group">
-                                            <div class="game-group">
-                                                <img src="img/farchy.png" alt="farcy" class="game-group--img">
-                                                <div class="game-group--div">
-                                                    <img src="img/playstation.png" alt="">
-                                                    <span>PS4</span>
-                                                </div>
-                                            </div>
-                                            <div  class="game-name">Far Cry New Dawn</div>
-                                        </div>
-                                        <div class="profile__game__div--img-group">
-                                                <div class="game-group">
-                                                    <img src="img/farchy.png" alt="farcy" class="game-group--img">
-                                                    <div class="game-group--div">
-                                                        <img src="img/playstation.png" alt="">
-                                                        <span>PS4</span>
-                                                    </div>
-                                                </div>
-                                                <div  class="game-name">Far Cry New Dawn</div>
-                                            </div>
-                                            <div class="profile__game__div--img-group">
-                                                    <div class="game-group">
-                                                        <img src="img/farchy.png" alt="farcy" class="game-group--img">
-                                                        <div class="game-group--div">
-                                                            <img src="img/playstation.png" alt="">
-                                                            <span>PS4</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="game-name">Far Cry New Dawn</div>
-                                                </div>
-                                                <div class="profile__game__div--img-group">
-                                                        <div class="game-group">
-                                                            <img src="img/farchy.png" alt="farcy" class="game-group--img">
-                                                            <div class="game-group--div">
-                                                                <img src="img/playstation.png" alt="">
-                                                                <span>PS4</span>
-                                                            </div>
-                                                        </div>
-                                                        <div  class="game-name">Far Cry New Dawn</div>
-                                                    </div>
-                                    </div>
 
-                                    <button type="submit" class="btn profile__game__btn">+ Bütün oyunları gör (1234)</button>
+                                <h4 class="profile__game--heading"><span>Digər Oyunlar</span></h4>
+                                <div class="profile__game__div row">
+                                    <div class="profile__game__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                        <div class="game-group">
+                                            <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                            <div class="game-group--div">
+                                                <img src="img/playstation.png" alt="">
+                                                <span>PS4</span>
+                                            </div>
+                                            <p class="game-group--name">Far Cry New Dawn</p>
+                                        </div>
+                                    </div>
+                                    <div class="profile__game__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                        <div class="game-group">
+                                            <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                            <div class="game-group--div">
+                                                <img src="img/playstation.png" alt="">
+                                                <span>PS4</span>
+                                            </div>
+                                            <p class="game-group--name">Far Cry New Dawn</p>
+                                        </div>
+                                    </div>
+                                    <div class="profile__game__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                        <div class="game-group">
+                                            <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                            <div class="game-group--div">
+                                                <img src="img/playstation.png" alt="">
+                                                <span>PS4</span>
+                                            </div>
+                                            <p class="game-group--name">Far Cry New Dawn</p>
+                                        </div>
+                                    </div>
+                                    <div class="profile__game__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                        <div class="game-group">
+                                            <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                            <div class="game-group--div">
+                                                <img src="img/playstation.png" alt="">
+                                                <span>PS4</span>
+                                            </div>
+                                            <p class="game-group--name">Far Cry New Dawn</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn profile__btn ripple-effect">+ Bütün oyunları gör (1234)</button>
+                            </div>
+
+
+                            <div class="grayBox profile__watch">
+                                <h4 class="profile-heading">İzlədikləri <i class="fas fa-info-circle"></i></h4>
+                                <div class="profile__watch__div row">
+                                    <div class="profile__watch__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                        <div class="game-group">
+                                            <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                            <div class="game-group--div">
+                                                <img src="img/playstation.png" alt="">
+                                                <span>PS4</span>
+                                            </div>
+                                            <p class="game-group--name">Far Cry New Dawn</p>
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="profile__watch__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                        <div class="game-group">
+                                            <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                            <div class="game-group--div">
+                                                <img src="img/playstation.png" alt="">
+                                                <span>PS4</span>
+                                            </div>
+                                            <p class="game-group--name">Far Cry New Dawn</p>
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="profile__watch__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                        <div class="game-group">
+                                            <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                            <div class="game-group--div">
+                                                <img src="img/playstation.png" alt="">
+                                                <span>PS4</span>
+                                            </div>
+                                            <p class="game-group--name">Far Cry New Dawn</p>
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="profile__watch__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                        <div class="game-group">
+                                            <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                            <div class="game-group--div">
+                                                <img src="img/playstation.png" alt="">
+                                                <span>PS4</span>
+                                            </div>
+                                            <p class="game-group--name">Far Cry New Dawn</p>
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="profile__watch__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                        <div class="game-group">
+                                            <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                            <div class="game-group--div">
+                                                <img src="img/playstation.png" alt="">
+                                                <span>PS4</span>
+                                            </div>
+                                            <p class="game-group--name">Far Cry New Dawn</p>
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="profile__watch__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                        <div class="game-group">
+                                            <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                            <div class="game-group--div">
+                                                <img src="img/playstation.png" alt="">
+                                                <span>PS4</span>
+                                            </div>
+                                            <p class="game-group--name">Far Cry New Dawn</p>
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="profile__watch__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                        <div class="game-group">
+                                            <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                            <div class="game-group--div">
+                                                <img src="img/playstation.png" alt="">
+                                                <span>PS4</span>
+                                            </div>
+                                            <p class="game-group--name">Far Cry New Dawn</p>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn profile__btn ripple-effect">+ Bütün oyunları gör (1234)</button>
                             </div>
                         </div>
                     </div>

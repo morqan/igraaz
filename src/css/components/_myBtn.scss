@@ -13,7 +13,7 @@
     text-align: center;
     
     @include respondmax(sm) {
-       
+
         margin-bottom: 1rem;
     }
     &:hover{
