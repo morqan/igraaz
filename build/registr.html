@@ -147,25 +147,25 @@
                 </div>
                 <h3 class="box__title">VƏ YA</h3>
                 <div class="grayBox__content">
-                    <form>
+                    <form class="registr-form">
                         <div class="form-row">
                             <div class="col-lg-4 col-md-6">
-                                <input type="text" class="form-control form__control " placeholder="Ad">
+                                <input type="text" class="form-control form__control " placeholder="Ad" required>
                             </div>
                             <div class="col-lg-4 col-md-6">
-                                <input type="text" class="form-control form__control " placeholder="Soyad">
+                                <input type="text" class="form-control form__control " placeholder="Soyad" required>
                             </div>
                             <div class="col-lg-4 col-md-6">
-                                <input type="email" class="form-control form__control " placeholder="E-poçt adresi">
+                                <input type="email" class="form-control form__control " placeholder="E-poçt adresi" required>
                             </div>
                             <div class="col-lg-4 col-md-6">
-                                <input type="text" class="form-control form__control " placeholder="Mobil nömrə">
+                                <input type="text" class="form-control form__control " placeholder="Mobil nömrə" required>
                             </div>
                             <div class="col-lg-4 col-md-6">
                                 <div class="inputBox">
                                     <span class="inputBox__fieldType">Cinsiyyət</span>
                                     <label class="myRadio">Kişi
-                                        <input type="radio" checked="checked" name="radio">
+                                        <input type="radio" checked="checked" name="radio"  required>
                                         <span class="myRadio__checkmark"></span>
                                     </label>
                                     <label class="myRadio">Qadın
@@ -175,14 +175,14 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6">
-                                <input type="text" id="bd" class="form-control form__control " placeholder="Doğum tarixi">
+                                <input type="text" id="bd" class="form-control form__control " placeholder="Doğum tarixi" required>
                             </div>
                             <div class="col-lg-4 col-md-6">
-                                <input type="password" class="form-control form__control " placeholder="Şifrə">
+                                <input type="password" class="form-control form__control " id="form-password" placeholder="Şifrə" required>
                             </div>
                             <div class="col-lg-4 col-md-6">
                                 <input type="password" class="form-control form__control "
-                                    placeholder="Şifrənin təkrarı">
+                                    placeholder="Şifrənin təkrarı" data-parsley-equalto="#form-password"  required>
                             </div>
                             <div class="col-lg-4 col-md-6">
                                 <button type="submit" class="myBtn">GİRİŞ ET</button>
@@ -304,7 +304,8 @@
 <script src="libs/owl.carousel/dist/owl.carousel.min.js" type="text/javascript" charset="utf-8" async defer></script>
 <script src="libs/dropzone/dist/dropzone.js" type="text/javascript" charset="utf-8" async defer></script>
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
+<!-- PARSLEY JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.1/parsley.min.js"></script>
 <!-- <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script> -->
 <!-- <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script> -->
 <script src="js/all.js"></script>

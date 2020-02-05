@@ -1479,6 +1479,14 @@ body {
   color: #fff;
   font-size: 1.8rem; }
 
+.parsley-required,
+.parsley-type,
+.parsley-equalto {
+  text-align: left;
+  color: #ff295a;
+  margin-bottom: 10px;
+  font-size: 14px; }
+
 .footer__top {
   height: 6rem;
   background-color: #282828; }

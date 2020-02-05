@@ -27,7 +27,6 @@ $( document ).ready(function() {
         disableMobile: "true"
     });
 });
-
 $(document).ready(function(){
     $('.main__carousel').owlCarousel({
         loop:true,
@@ -59,6 +58,16 @@ $(document).ready(function(){
     });
  });
 
+$(document).ready(function () {
+    $('.registr-form').parsley().on('field:validated', function () {
+            var ok = $('.parsley-error').length === 0;
+            $('.bs-callout-info').toggleClass('hidden', !ok);
+            $('.bs-callout-warning').toggleClass('hidden', ok);
+        })
+        .on('form:submit', function () {
+            return false; // Don't submit form for this demo
+        });
+});
 $( document ).ready(function() {
    // Ripple-effect animation
 (function($) {
