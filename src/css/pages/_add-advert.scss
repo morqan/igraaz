@@ -1,0 +1,156 @@
+.personal-information-box {
+    display: none;
+}
+
+.rental-information {
+    display: none;
+}
+
+.barter-information {
+    display: none;
+}
+
+
+.custom-dropdown {
+    /* Size and position */
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+
+    cursor: pointer;
+    outline: none;
+
+    //////////
+    font-size: 1.6rem;
+    background-color: #282d34;
+    border-radius: 5px;
+    text-transform: capitalize;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+    line-height: 1.7;
+    font-weight: 400;
+    // margin-bottom: unset;
+
+
+    text-align: left;
+    color: #fff !important;
+
+    padding: 1rem 2rem;
+
+    &:focus .custom-dropdown__list {
+        opacity: 1;
+        pointer-events: auto;
+
+    }
+
+    &:after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f063";
+
+        position: absolute;
+        right: 8%;
+        top: 20%;
+        // margin-top: -3px;
+        // border-width: 6px 6px 0 6px;
+        // border-style: solid;
+        // border-color: #a2a2a2 transparent;
+    }
+
+    &__list {
+        /* Size & position */
+        position: absolute;
+        top: 112%;
+        left: 0;
+        right: 0;
+        z-index: 999;
+
+        border-radius: 3px;
+
+        font-weight: normal;
+
+        transition: all 0.3s ease-in;
+        list-style: none;
+
+        /* Hiding */
+        opacity: 0;
+        pointer-events: none;
+
+        background-color: #282d34;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+        z-index: 9999;
+
+        border: 1px solid rgba(0, 0, 0, .15);
+        border-top-color: rgba(0, 0, 0, 0.15);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: rgba(0, 0, 0, 0.15);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: rgba(0, 0, 0, 0.15);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgba(0, 0, 0, 0.15);
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-image-source: initial;
+        border-image-slice: initial;
+        border-image-width: initial;
+        border-image-outset: initial;
+        border-image-repeat: initial;
+
+        li {
+
+            a {
+                display: block;
+                padding: 10px;
+                text-decoration: none;
+                // box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+
+                transition: all 0.3s ease-out;
+
+                color: #fff;
+                font-size: 1.5rem;
+                padding: 1rem 2rem !important;
+            }
+            &:hover a {
+                background-color: #1f2124;
+                color: #fff;
+            }
+
+            i {
+                float: right;
+                color: inherit;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+/* Active state */
+
+.custom-dropdown.active .custom-dropdown__list {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* No CSS3 support */
+
+.no-opacity .custom-dropdown .custom-dropdown__list,
+.no-pointerevents .custom-dropdown .custom-dropdown__list {
+    display: none;
+    opacity: 1;
+    /* If opacity support but no pointer-events support */
+    pointer-events: auto;
+    /* If pointer-events support but no pointer-events support */
+}
+
+.no-opacity .custom-dropdown.active .custom-dropdown__list,
+.no-pointerevents .custom-dropdown.active .custom-dropdown__list {
+    display: block;
+}
+

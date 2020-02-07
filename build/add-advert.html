@@ -128,13 +128,13 @@
                         davam edin. Qeydiyyat etməmisinizsə, qeydiyyatsız seçərək
                         qeydiyyatdan keçin</p>
                     <div class="membership">
-                        <a class="membership__link ripple-effect" href="javascript:void(0)">
+                        <a class="membership__link ripple-effect  with-registration-btn" href="javascript:void(0)">
                             <i class="fas fa-user-check"></i>
                             <span>Qeydiyyatlı</span>
                         </a>
-                        <a class="membership__link ripple-effect" href="javascript:void(0)">
+                        <a class="membership__link ripple-effect without-registration-btn" href="javascript:void(0)">
                             <i class="fas fa-user-slash"></i>
-                            <span>Qeydiyyatlısiz</span>
+                            <span>Qeydiyyatsız</span>
                         </a>
 
                     </div>
@@ -143,7 +143,7 @@
             </div>
 
 
-            <div class="grayBox mb-4">
+            <div class="grayBox mb-4 personal-information-box">
                 <div class="grayBox__content">
                     <h1 class="mb-20">ŞƏXSİ MƏLUMATLAR</h1>
                     <p class="note mb-5"><span>QEYD: </span>Aşağıdakı məlumatlar qeydiyyat məlumatlarından
@@ -152,25 +152,28 @@
                         edə bilərsiniz.</p>
 
                     <div class="form-row">
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-3 col-md-6">
                             <input type="text" class="form-control form__control " placeholder="Ad">
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-3 col-md-6">
                             <input type="text" class="form-control form__control " placeholder="Soyad">
                         </div>
 
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-3 col-md-6">
                             <input type="text" class="form-control form__control " placeholder="Mobil nömrə">
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <input type="text" class="form-control form__control " placeholder="Email">
                         </div>
 
                         <div class="col-lg-12 ">
-                            <button type="submit" class="myBtn ripple-effect">NÖVBƏTİ MƏRHƏLƏYƏ KEÇ</button>
+                            <a href="#section-advert" class="myBtn ripple-effect">NÖVBƏTİ MƏRHƏLƏYƏ KEÇ</a>
                         </div>
                     </div>
 
                 </div>
             </div>
-            <div class="grayBox mb-4">
+            <div class="grayBox mb-4" id="section-advert">
                 <div class="grayBox__content">
                     <h1 class="mb-20">ELAN MƏLUMATLARI</h1>
                     <p class="note mb-5"><span>QEYD: </span> Aşağıdakı məlumatlar qeydiyyat məlumatlarından
@@ -183,25 +186,48 @@
                             <div class="inputBox">
                                 <span class="inputBox__fieldType">Elanın növü</span>
                                 <label class="myCheckbox">Satıram
-                                    <input type="checkbox" checked="checked" name="checkbox">
+                                    <input type="checkbox" checked="checked" name="checkbox" class="sale-checkbox">
                                     <span class="myCheckbox__checkmark"></span>
                                 </label>
                                 <label class="myCheckbox">Icarəyə verirəm
-                                    <input type="checkbox" name="checkbox">
+                                    <input type="checkbox" name="checkbox" class="rental-checkbox">
                                     <span class="myCheckbox__checkmark"></span>
                                 </label>
                                 <label class="myCheckbox">Barter edirəm
-                                    <input type="checkbox" name="checkbox">
+                                    <input type="checkbox" name="checkbox"  class="barter-checkbox">
                                     <span class="myCheckbox__checkmark"></span>
                                 </label>
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="btn-group paymant__btnGroup ">
-
-                                <button type="button" class="btn dropdown-toggle myDrop ripple-effect" data-toggle="dropdown"
+                                <div id="dd" class="custom-dropdown" tabindex="1">
+                                    <span>Kateqoriya </span>
+                                    <ul class="custom-dropdown__list dropdown">
+                                        <li><a href="#" class="">Best</a></li>
+                                        <li><a href="#">Newest</a></li>
+                                    </ul>
+                                    <input type="hidden" class="hidden-input" value="">
+                                </div>
+                              
+                                <!-- <button type="button" class="btn dropdown-toggle myDrop ripple-effect" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
                                     Kateqoriya
+                                    <i class="fas fa-arrow-down"></i>
+                                </button>
+                                <div class="dropdown-menu myDrop__menu">
+                                    <a class="dropdown-item myDrop__item" href="#">Action</a>
+                                    <a class="dropdown-item myDrop__item" href="#">Another action</a>
+                                    <a class="dropdown-item myDrop__item" href="#">Something else here</a>
+                                    <a class="dropdown-item myDrop__item" href="#">Separated link</a>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="btn-group paymant__btnGroup ">
+                                <button type="button" class="btn dropdown-toggle myDrop ripple-effect" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Platforma
                                     <i class="fas fa-arrow-down"></i>
                                 </button>
                                 <div class="dropdown-menu myDrop__menu">
@@ -212,7 +238,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <!-- <div class="col-lg-3">
+                            <input type="text" class="form-control form__control " placeholder="Elanın adı">
+                        </div> -->
+                        <div class="col-lg-6">
                             <input type="text" class="form-control form__control " placeholder="Elanın adı">
                         </div>
                         <div class="col-lg-4">
@@ -244,24 +273,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="btn-group paymant__btnGroup ">
-                                <button type="button" class="btn dropdown-toggle myDrop ripple-effect" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-                                    Platforma
-                                    <i class="fas fa-arrow-down"></i>
-                                </button>
-                                <div class="dropdown-menu myDrop__menu">
-                                    <a class="dropdown-item myDrop__item" href="#">Action</a>
-                                    <a class="dropdown-item myDrop__item" href="#">Another action</a>
-                                    <a class="dropdown-item myDrop__item" href="#">Something else here</a>
-                                    <a class="dropdown-item myDrop__item" href="#">Separated link</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <input type="text" class="form-control form__control " placeholder="Qiymət">
-                        </div>
+                       
                         <div class="col-lg-9">
                             <textarea type="text" class="form-control form__control form__control--textarea"
                                 placeholder="Məzmun">
@@ -287,35 +299,53 @@
                     </div>
 
                 </div>
-                <h3 class="box__title">İCARƏ MƏLUMATLARI</h3>
-                <div class="grayBox__content">
-
-                    <div class="form-row">
-                        <div class="col-lg-3">
-                            <input type="text" class="form-control form__control " placeholder="İcarə qiyməti">
+                <div class="sales-information">
+                    <h3 class="box__title">SATIŞ MƏLUMATLARI</h3>
+                    <div class="grayBox__content">
+    
+                        <div class="form-row">
+                            <div class="col-lg-3">
+                                <input type="text" class="form-control form__control " placeholder="Qiymət">
+                            </div>
+    
+                           
                         </div>
-
-                        <div class="col-lg-3">
-                            <div class="btn-group paymant__btnGroup ">
-                                <button type="button" class="btn dropdown-toggle myDrop ripple-effect"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    İcarə müddəti
-                                    <i class="fas fa-arrow-down"></i>
-                                </button>
-                                <div class="dropdown-menu myDrop__menu">
-                                    <a class="dropdown-item myDrop__item" href="#">Action</a>
-                                    <a class="dropdown-item myDrop__item" href="#">Another action</a>
-                                    <a class="dropdown-item myDrop__item" href="#">Something else here</a>
-                                    <a class="dropdown-item myDrop__item" href="#">Separated link</a>
+    
+                    </div>
+                </div>
+                <div class="rental-information">
+                    <h3 class="box__title">İCARƏ MƏLUMATLARI</h3>
+                    <div class="grayBox__content">
+    
+                        <div class="form-row">
+                            <div class="col-lg-3">
+                                <input type="text" class="form-control form__control " placeholder="İcarə qiyməti">
+                            </div>
+    
+                            <div class="col-lg-3">
+                                <div class="btn-group paymant__btnGroup ">
+                                    <button type="button" class="btn dropdown-toggle myDrop ripple-effect"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        İcarə müddəti
+                                        <i class="fas fa-arrow-down"></i>
+                                    </button>
+                                    <div class="dropdown-menu myDrop__menu">
+                                        <a class="dropdown-item myDrop__item" href="#">Action</a>
+                                        <a class="dropdown-item myDrop__item" href="#">Another action</a>
+                                        <a class="dropdown-item myDrop__item" href="#">Something else here</a>
+                                        <a class="dropdown-item myDrop__item" href="#">Separated link</a>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control form__control " placeholder="Əlavə qeydlər">
+                            </div>
                         </div>
-                        <div class="col-lg-6">
-                            <input type="text" class="form-control form__control " placeholder="Əlavə qeydlər">
-                        </div>
+    
                     </div>
-
                 </div>
+               <div class="barter-information">
+
                 <h3 class="box__title">BARTER MƏLUMATLARI</h3>
                 <div class="grayBox__content">
 
@@ -342,7 +372,7 @@
                             <input type="text" class="form-control form__control " placeholder="Məbləğ">
                         </div>
 
-                        <div class="col-lg-3">
+                        <!-- <div class="col-lg-3">
                             <div class="btn-group paymant__btnGroup ">
                                 <button type="button" class="btn dropdown-toggle myDrop ripple-effect"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -379,13 +409,15 @@
                             <button type="button" class="myBtn myBtn__advert ripple-effect"><i class="fas fa-plus"></i>
                                 Yenisini əlavə et
                             </button>
-                        </div>
+                        </div> -->
                         <div class="col-lg-12">
                             <button type="submit" class="myBtn ripple-effect">ELANI DƏRC ET</button>
                         </div>
                     </div>
 
                 </div>
+               </div>
+               
             </div>
 
         </div>
