@@ -1,29 +1,13 @@
 $(document).ready(function () {
-    $('.without-registration-btn').click(function () {
-        $('.personal-information-box').slideDown(1000);
-        // $('.personal-information-box').delay(1000).queue(function (next) {
-        //     $(this).slideDown(1000); 
-        //     next();
-        // });
-    });
-
-    $('.with-registration-btn').click(function () {
-        $('.personal-information-box').slideUp(1000);
-    });
-
-    // $('.ios-switch').click(function () {
-    //     var iosSwitch;
-    //     if ($(this)[0].checked) {
-    //         iosSwitch = "true";
-    //         $(this).parent().parent().removeClass('ios-switch-disable');
-
-    //     } else {
-    //         iosSwitch = "false";
-    //         $(this).parent().parent().addClass('ios-switch-disable');
-
-    //     }
+    // $('.without-registration-btn').click(function () {
+    //     $('.personal-information-box').slideDown(1000);
 
     // });
+
+    // $('.with-registration-btn').click(function () {
+    //     $('.personal-information-box').slideUp(1000);
+    // });
+
     $(".sale-checkbox").on('change', function () {
         if ($(this).is(':checked')) {
             $(this).attr('value', 'true');
@@ -35,6 +19,8 @@ $(document).ready(function () {
             $('.sales-information').css({
                 "display": "none"
             });
+
+            $('.sales-information__input').val('');
         }
     });
     $(".rental-checkbox").on('change', function () {
@@ -48,6 +34,7 @@ $(document).ready(function () {
             $('.rental-information').css({
                 "display": "none"
             });
+            $('.rental-information__input').val('');
         }
     });
 
@@ -62,94 +49,43 @@ $(document).ready(function () {
             $('.barter-information').css({
                 "display": "none"
             });
+            $('.barter-information__input').val('');
+            $('.barter-information').find('input:radio').prop('checked', false);
         }
     });
 
-    function DropDown(el) {
-        this.dd = el;
-        this.placeholder = this.dd.children('span');
-        this.opts = this.dd.find('.dd_menu > a');
-        this.val = '';
-        this.index = -1;
-        this.initEvents();
-    }
-    DropDown.prototype = {
-        initEvents: function () {
-            var obj = this;
-
-            obj.dd.on('click', function (event) {
-                $(this).toggleClass('active');
-                return false;
-            });
-
-            obj.opts.on('click', function () {
-                var opt = $(this);
-                obj.val = opt.text();
-                obj.index = opt.index();
-                obj.placeholder.text(obj.val);
-            });
-        },
-        getValue: function () {
-            return this.val;
-        },
-        getIndex: function () {
-            return this.index;
-        }
-    }
-
-    $(function () {
-
-        function DropDown(el) {
-
-            this.dd = el;
-            this.placeholder = this.dd.children('span');
-            this.opts = this.dd.find('.custom-dropdown__list > li');
-
-            this.val = '';
-            this.index = -1;
-            this.initEvents();
-
-
-        }
-        DropDown.prototype = {
-            initEvents: function () {
-                var obj = this;
-               
-                obj.dd.on('click', function (event) {
-                    $(this).toggleClass('active');
-                    return false;
-                });
-
-                obj.opts.on('click', function () {
-                    var opt = $(this);
-                   
-                    obj.val = opt.text();
-                    obj.index = opt.index();
-                    obj.placeholder.text(obj.val);
-                
-                });
-            },
-            getValue: function () {
-                return this.val;
-            },
-            getIndex: function () {
-                return this.index;
-            }
-        }
-
-        $(function () {
-
-            var dd = new DropDown($('#dd'));
-
-            $(document).click(function () {
-                // all dropdowns
-                $('.custom-dropdown').removeClass('active');
-            });
-
+    $(document).ready(function () {
+        $('.advert-platform').select2({
+            placeholder: "Platforma",
         });
 
+        $('.advert-platform').on('change', function () {
+            $('.advert-platform-hidden').val($(this).val());
+        });
 
+        $('.advert-category').select2({
+            placeholder: "Kateqoriya",
+
+        });
+        $('.advert-category').on('change', function () {
+            $('.advert-category-hidden').val($(this).val());
+        });
+        $('.advert-city').select2({
+            placeholder: "Şəhər",
+
+        });
+        $('.advert-city').on('change', function () {
+            $('.advert-city-hidden').val($(this).val());
+        });
+        $('.advert-rental-time').select2({
+            placeholder: "İcarə müddəti",
+
+        });
+        $('.advert-rental-time').on('change', function () {
+            $('.advert-rental-time-hidden').val($(this).val());
+        });
     });
+
 
 
 });
