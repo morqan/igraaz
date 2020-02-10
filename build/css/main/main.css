@@ -3005,6 +3005,8 @@ Link : http://techhysahil.com
 
 .barter-information {
   display: none; }
+  .barter-information__input {
+    display: none; }
 
 .custom-dropdown {
   /* Size and position */
