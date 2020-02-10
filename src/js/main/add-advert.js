@@ -54,6 +54,19 @@ $(document).ready(function () {
         }
     });
 
+    $("input[type='radio'][name='radio']").on('change', function () {
+       let barterDataID = $(this).attr('data-id');
+        if ($(this).is(':checked') && barterDataID == 'on-equal-terms') {
+            $('.barter-information__input').css({
+                "display": "none"
+            });
+        } else if ($(this).is(':checked') && barterDataID == 'on-money-terms') {
+            $('.barter-information__input').css({
+                "display": "block"
+            });
+        }
+    });
+
     $(document).ready(function () {
         $('.advert-platform').select2({
             placeholder: "Platforma",
