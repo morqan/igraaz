@@ -1,0 +1,164 @@
+.forum-inner {
+    &__div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    &__name {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+
+        &-group {
+            display: flex;
+            flex-direction: column;
+            width: 15%;
+        }
+    }
+
+    &__category {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 85%;
+
+        &__group {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__text-group {
+        text-align: left;
+    }
+
+    &__date {
+        margin-left: 10px;
+
+        &-group {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__btn {
+        font-size: 1.8rem;
+        padding: 5px 20px;
+       
+        border-radius: 5px;
+        border: none;
+        background-color: $color-red;
+        color: $color-white;
+        text-align: center;
+
+
+        
+
+        &-group {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid $color-gray-border;
+            padding-top: 20px;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+
+        &--link {
+            padding: 20px;
+            font-size: 25px;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+
+            color: $color-white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                color: $color-white;
+            }
+
+        }
+
+        &--item {
+            .fa-facebook-f {
+                background: #3B5998;
+            }
+
+            .fa-twitter {
+                background: #55ACEE;
+
+            }
+
+            .fa-instagram {
+                background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+
+            }
+
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+
+        }
+    }
+
+    &--topic {
+        font-weight: bold;
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    &--text {
+        padding-bottom: 20px;
+    }
+
+    &__comment {
+        width: 82%;
+        margin-left: auto;
+
+        margin-bottom: 20px;
+
+        &--textarea {
+            width: 100%;
+            padding-left: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            background: #fafefa;
+            &::placeholder{
+                font-size: 16px;
+                padding-left: 10px;
+            }
+        }
+        &--div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        &--btn {
+            background-color: $color-gray-border;
+            color: $color-white;
+            font-size: 16px;
+            border: 1px solid transparent;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+
+            margin-top: 10px;
+        }
+    }
+}
