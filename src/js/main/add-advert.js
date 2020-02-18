@@ -10,12 +10,12 @@ $(document).ready(function () {
 
     $(".sale-checkbox").on('change', function () {
         if ($(this).is(':checked')) {
-            $(this).attr('value', 'true');
+           
             $('.sales-information').css({
                 "display": "block"
             });
         } else {
-            $(this).attr('value', 'false');
+           
             $('.sales-information').css({
                 "display": "none"
             });
@@ -25,12 +25,12 @@ $(document).ready(function () {
     });
     $(".rental-checkbox").on('change', function () {
         if ($(this).is(':checked')) {
-            $(this).attr('value', 'true');
+           
             $('.rental-information').css({
                 "display": "block"
             });
         } else {
-            $(this).attr('value', 'false');
+          
             $('.rental-information').css({
                 "display": "none"
             });
@@ -40,12 +40,12 @@ $(document).ready(function () {
 
     $(".barter-checkbox").on('change', function () {
         if ($(this).is(':checked')) {
-            $(this).attr('value', 'true');
+          
             $('.barter-information').css({
                 "display": "block"
             });
         } else {
-            $(this).attr('value', 'false');
+           
             $('.barter-information').css({
                 "display": "none"
             });

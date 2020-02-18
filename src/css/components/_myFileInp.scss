@@ -26,6 +26,10 @@
         box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
         border-radius: .5rem;
         background-color: $color-paymantDrop;
+
+        &--opacity{
+            opacity: 0;
+        }
         
         i{
             font-size: 6rem;
@@ -52,5 +56,9 @@
         border-radius: .5rem;
        opacity: 0;
 
+       &--opacity {
+           opacity: 1;
+       }
     }
+
 }
