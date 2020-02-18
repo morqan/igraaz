@@ -1,0 +1,551 @@
+//= template/head.html
+
+
+
+<main>
+    <section class="profile">
+        <div class="container">
+
+
+
+            <div class="form-row profile__form-row">
+
+                <div class="col-lg-12">
+                    <div class="grayBox p-0">
+                        <div class="my-profile__mainImgBox">
+
+                            <form action="" class="my-profile__bg-img-form">
+                                <div class="circle-1">
+
+                                    <img class="bg-pic" src="img/profile-bg.png" id="item-img-outputBG">
+
+
+                                </div>
+                                <div class="my-profile__btn-group">
+                                    <div class="p-image-1">
+                                        <i class="fa fa-camera upload-button-1"></i>
+                                        <input class="file-upload-1  item-imgBG file " type="file" accept="image/*" />
+    
+                                    </div>
+    
+                                    <button type="submit" class="my-profile__btn my-profile__btn-bg btn">Save Background
+                                        Image</button>
+                                </div>
+                              
+                            </form>
+                            <div class="dropdown show my-profile__dropdown">
+                                <a class="btn btn-secondary dropdown-toggle my-profile__settings" href="#" role="button"
+                                    id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="fas fa-cogs"></i>
+                                </a>
+
+                                <div class="dropdown-menu my-profile__dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+
+                            <div class="my-profile__mainInfo">
+                                <div class="my-profile__mainInfo--img-group">
+                                    <div class="my-profile__userImgBox">
+
+                                        <form action="" class="my-profile__img-form">
+                                            <div class="circle">
+
+                                                <img class="profile-pic " src="img/user-default-img.png" id="item-img-output">
+                                                <div class="p-image">
+                                                    <i class="fa fa-camera upload-button"></i>
+                                                    <input class="file-upload item-img file " type="file" accept="image/*" />
+    
+                                                </div>
+                                            </div>
+                                           
+
+                                            <button type="submit" class="my-profile__btn   my-profile__btn-save btn">Save</button>
+                                        </form>
+                                    </div>
+
+                                    <p class="profile__userLevel">Səviyyə:<span>Legend</span>
+                                        <i class="fas fa-info-circle"></i>
+                                    </p>
+                                    <div class="profile__userProgress">
+                                        <div class="profile__userBar"></div>
+                                    </div>
+                                </div>
+
+                                <ul class="nav  my-profile__list" id="myTab" role="tablist">
+                                    <li class="my-profile__list--item">
+                                        <a class="nav-link my-profile__list--link active"
+                                            id="my-profile-information-tab" data-toggle="tab"
+                                            href="#my-profile-information" role="tab" aria-controls="information"
+                                            aria-selected="true">Ümumi
+                                            məlumat</a>
+                                    </li>
+                                    <li class=" my-profile__list--item">
+                                        <a class="nav-link my-profile__list--link" id="my-profile-friends-tab"
+                                            data-toggle="tab" href="#my-profile-friends" role="tab"
+                                            aria-controls="friends" aria-selected="false">Dostlar</a>
+                                    </li>
+                                    <li class=" my-profile__list--item">
+                                        <a class="nav-link my-profile__list--link" id="my-profile-games-tab"
+                                            data-toggle="tab" href="#my-profile-games" role="tab" aria-controls="games"
+                                            aria-selected="false">Oyunlar(1275)</a>
+                                    </li>
+                                    <li class=" my-profile__list--item">
+                                        <a class="nav-link my-profile__list--link" id="my-profile-advert-tab"
+                                            data-toggle="tab" href="#my-profile-advert" role="tab"
+                                            aria-controls="advert" aria-selected="false">Elanlar</a>
+                                    </li>
+                                    <li class=" my-profile__list--item">
+                                        <a class="nav-link my-profile__list--link" id="my-profile-watch-tab"
+                                            data-toggle="tab" href="#my-profile-watch" role="tab" aria-controls="watch"
+                                            aria-selected="false">İzlədikləri(8)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 order-2 order-lg-1">
+                            <div class="grayBox my-profile__achievement">
+                                <h4 class="profile-heading">Nəaliyyətlər <i class="fas fa-info-circle"></i></h4>
+                                <div class="profile__achievement__img-gorup">
+                                    <div class="achievement-img"><img src="img/archivements.png" alt="achievement"
+                                            class="img-fluid"></div>
+                                    <div class="achievement-img"><img src="img/archivements.png" alt="achievement"
+                                            class="img-fluid"></div>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-7 order-1 order-lg-2">
+                            <div class="grayBox my-profile__tab-div">
+                                <div class="tab-content" id="myTabContent">
+                                    <!-- my-profile-achievement-tab -->
+                                    <div class="tab-pane fade show active" id="my-profile-information" role="tabpanel"
+                                        aria-labelledby="my-profile-information-tab">
+                                        <form class="my-profile__form">
+                                            <div class="form-row">
+                                                <div class="col-sm-6 ">
+                                                    <input type="text" class="form-control form__control "
+                                                        placeholder="Ad" value="Mammad" required>
+                                                </div>
+                                                <div class="col-sm-6 ">
+                                                    <input type="text" class="form-control form__control "
+                                                        placeholder="Soyad" value="Mammadov" required>
+                                                </div>
+                                                <div class="col-sm-6 ">
+                                                    <input type="email" class="form-control form__control "
+                                                        placeholder="E-poçt adresi" value="Mammadov@gmail.com" required>
+                                                </div>
+                                                <div class="col-sm-6 ">
+                                                    <input type="text" class="form-control form__control "
+                                                        placeholder="Mobil nömrə" value="12324244" required>
+                                                </div>
+                                                <div class="col-sm-6 ">
+                                                    <div class="inputBox">
+                                                        <span class="inputBox__fieldType">Cinsiyyət</span>
+                                                        <label class="myRadio">Kişi
+                                                            <input type="radio" checked="checked" name="radio" required>
+                                                            <span class="myRadio__checkmark"></span>
+                                                        </label>
+                                                        <label class="myRadio">Qadın
+                                                            <input type="radio" name="radio">
+                                                            <span class="myRadio__checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 ">
+                                                    <input type="text" id="bd" class="form-control form__control "
+                                                        placeholder="Doğum tarixi" value="10/10/2005" required>
+                                                </div>
+                                                <div class="col-sm-6 ">
+                                                    <input type="password" class="form-control form__control "
+                                                        id="form-password" placeholder="Şifrə" value="12345" required>
+                                                </div>
+                                                <div class="col-sm-6 ">
+                                                    <input type="password" class="form-control form__control "
+                                                        placeholder="Şifrənin təkrarı"
+                                                        data-parsley-equalto="#form-password" value="12345" required>
+                                                </div>
+                                                <div class="col-sm-12 ml-auto">
+                                                    <button type="submit" class="myBtn">Dəyişiklik et</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="my-profile-friends" role="tabpanel"
+                                        aria-labelledby="my-profile-friends-tab">
+
+                                        <div class=" profile__friends">
+                                            <h4 class="profile-heading">Dostlar (21 ortaq) <i
+                                                    class="fas fa-info-circle"></i></h4>
+                                            <div class="profile__friends__div row">
+
+                                                <div class="profile__friends__div--img-group col-sm-6 col-md-3 ">
+                                                    <div class="friend-img">
+                                                        <img src="img/hacibey.png" alt="hacibey" class="img-fluid">
+                                                    </div>
+                                                    <div class="friend-name">Hacıbəy Heydərli</div>
+                                                </div>
+                                                <div class="profile__friends__div--img-group col-sm-6 col-md-3 ">
+                                                    <div class="friend-img">
+                                                        <img src="img/hacibey.png" alt="hacibey" class="img-fluid">
+                                                    </div>
+                                                    <div class="friend-name">Hacıbəy Heydərli</div>
+                                                </div>
+                                                <div class="profile__friends__div--img-group col-sm-6 col-md-3 ">
+                                                    <div class="friend-img">
+                                                        <img src="img/hacibey.png" alt="hacibey" class="img-fluid">
+                                                    </div>
+                                                    <div class="friend-name">Hacıbəy Heydərli</div>
+                                                </div>
+                                                <div class="profile__friends__div--img-group col-sm-6 col-md-3 ">
+                                                    <div class="friend-img">
+                                                        <img src="img/hacibey.png" alt="hacibey" class="img-fluid">
+                                                    </div>
+                                                    <div class="friend-name">Hacıbəy Heydərli</div>
+                                                </div>
+                                                <div class="profile__friends__div--img-group col-sm-6 col-md-3">
+                                                    <div class="friend-img">
+                                                        <img src="img/hacibey.png" alt="hacibey" class="img-fluid">
+                                                    </div>
+                                                    <div class="friend-name">Hacıbəy Heydərli</div>
+                                                </div>
+                                                <div class="profile__friends__div--img-group col-sm-6 col-md-3">
+                                                    <div class="friend-img">
+                                                        <img src="img/hacibey.png" alt="hacibey" class="img-fluid">
+                                                    </div>
+                                                    <div class="friend-name">Hacıbəy Heydərli</div>
+                                                </div>
+                                                <div class="profile__friends__div--img-group col-sm-6 col-md-3 ">
+                                                    <div class="friend-img">
+                                                        <img src="img/hacibey.png" alt="hacibey" class="img-fluid">
+                                                    </div>
+                                                    <div class="friend-name">Hacıbəy Heydərli</div>
+                                                </div>
+
+
+                                            </div>
+
+                                            <button type="submit" class="btn profile__btn ripple-effect">+ Bütün
+                                                dostları gör
+                                                (1234)</button>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="tab-pane fade" id="my-profile-games" role="tabpanel"
+                                        aria-labelledby="my-profile-games-tab">
+                                        <h4 class="profile-heading">Oyunlar <i class="fas fa-info-circle"></i></h4>
+                                        <h4 class="profile__game--heading"><span>Ortaq Oyunlar</span></h4>
+                                        <div class="profile__game__div row">
+                                            <div
+                                                class="profile__game__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                                <div class="game-group">
+                                                    <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                                    <div class="game-group--div">
+                                                        <img src="img/playstation.png" alt="">
+                                                        <span>PS4</span>
+                                                    </div>
+                                                    <p class="game-group--name">Far Cry New Dawn</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="profile__game__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                                <div class="game-group">
+                                                    <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                                    <div class="game-group--div">
+                                                        <img src="img/playstation.png" alt="">
+                                                        <span>PS4</span>
+                                                    </div>
+                                                    <p class="game-group--name">Far Cry New Dawn</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="profile__game__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                                <div class="game-group">
+                                                    <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                                    <div class="game-group--div">
+                                                        <img src="img/playstation.png" alt="">
+                                                        <span>PS4</span>
+                                                    </div>
+                                                    <p class="game-group--name">Far Cry New Dawn</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="profile__game__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                                <div class="game-group">
+                                                    <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                                    <div class="game-group--div">
+                                                        <img src="img/playstation.png" alt="">
+                                                        <span>PS4</span>
+                                                    </div>
+                                                    <p class="game-group--name">Far Cry New Dawn</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <h4 class="profile__game--heading"><span>Digər Oyunlar</span></h4>
+                                        <div class="profile__game__div row">
+                                            <div
+                                                class="profile__game__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                                <div class="game-group">
+                                                    <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                                    <div class="game-group--div">
+                                                        <img src="img/playstation.png" alt="">
+                                                        <span>PS4</span>
+                                                    </div>
+                                                    <p class="game-group--name">Far Cry New Dawn</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="profile__game__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                                <div class="game-group">
+                                                    <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                                    <div class="game-group--div">
+                                                        <img src="img/playstation.png" alt="">
+                                                        <span>PS4</span>
+                                                    </div>
+                                                    <p class="game-group--name">Far Cry New Dawn</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="profile__game__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                                <div class="game-group">
+                                                    <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                                    <div class="game-group--div">
+                                                        <img src="img/playstation.png" alt="">
+                                                        <span>PS4</span>
+                                                    </div>
+                                                    <p class="game-group--name">Far Cry New Dawn</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="profile__game__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                                <div class="game-group">
+                                                    <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                                    <div class="game-group--div">
+                                                        <img src="img/playstation.png" alt="">
+                                                        <span>PS4</span>
+                                                    </div>
+                                                    <p class="game-group--name">Far Cry New Dawn</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button type="submit" class="btn profile__btn ripple-effect">+ Bütün oyunları
+                                            gör
+                                            (1234)</button>
+                                    </div>
+                                    <div class="tab-pane fade" id="my-profile-advert" role="tabpanel"
+                                        aria-labelledby="my-profile-advert-tab">
+                                        <div class="my-profile__advert">
+                                            <div class="my-profile__advert--head">
+                                                <div class="my-profile__advert--no">No</div> 
+                                                <div class="my-profile__advert__name">Adı</div> 
+                                                <div class="my-profile__advert--date">Yüklənmə tarixi</div>
+                                                <div class="my-profile__advert--status">Statusu</div>
+                                                <div class="my-profile__advert--type">Tipi</div>
+                                                <div class="my-profile__advert--premium"></div>
+                                            </div>
+                                            <div class="my-profile__advert--body">
+                                                <div class="my-profile__advert--item">
+                                                    <div class="my-profile__advert--no">1</div>
+                                                    <div class="my-profile__advert--name"> <a href="#" class="my-profile__advert--name-link"> lorem</a> </div>
+                                                    <div class="my-profile__advert--date">02.02.2020</div>
+                                                    <div class="my-profile__advert--status">pending</div>
+                                                    <div class="my-profile__advert--type">general</div>
+                                                    <div class="my-profile__advert--premium"> <a class="advertInner__listLink my-profile__advert--premium-link ripple-effect" href="javascript:void(0)" data-toggle="modal" data-target="#premiumModal"><i class="fas fa-gem" style="color: #ffaa64;"></i>PREMİUM ELAN ET</a></div>
+                                                </div>
+                                                <div class="my-profile__advert--item">
+                                                    <div class="my-profile__advert--no">2</div>
+                                                    <div class="my-profile__advert--name"> <a href="#" class="my-profile__advert--name-link"> lorem</a> </div>
+                                                    <div class="my-profile__advert--date">02.02.2020</div>
+                                                    <div class="my-profile__advert--status">accepted</div>
+                                                    <div class="my-profile__advert--type">premium</div>
+                                                    <div class="my-profile__advert--premium"> <a class="advertInner__listLink my-profile__advert--premium-link ripple-effect" href="javascript:void(0)"><i class="fas fa-gem" style="color: #ffaa64;"></i>PREMİUM ELAN ET</a></div>
+                                                </div>
+                                                <div class="my-profile__advert--item">
+                                                    <div class="my-profile__advert--no">3</div>
+                                                    <div class="my-profile__advert--name"> <a href="#" class="my-profile__advert--name-link">Strong Bad's Cool Game for Attractive People Episode 5: 8-bit is Enough</a> </div>
+                                                    <div class="my-profile__advert--date">02.02.2020</div>
+                                                    <div class="my-profile__advert--status">rejected</div>
+                                                    <div class="my-profile__advert--type">vip</div>
+                                                    <div class="my-profile__advert--premium"> <a class="advertInner__listLink my-profile__advert--premium-link ripple-effect" href="javascript:void(0)"><i class="fas fa-gem" style="color: #ffaa64;"></i>PREMİUM ELAN ET</a></div>
+                                                </div>
+                                                <div class="my-profile__advert--item">
+                                                    <div class="my-profile__advert--no">4</div>
+                                                    <div class="my-profile__advert--name"> <a href="#"  class="my-profile__advert--name-link"> Lorem ipsum dolor sit amet</a> </div>
+                                                    <div class="my-profile__advert--date">02.02.2020</div>
+                                                    <div class="my-profile__advert--status">ipsum</div>
+                                                    <div class="my-profile__advert--type">adada</div>
+                                                    <div class="my-profile__advert--premium"> <a class="advertInner__listLink my-profile__advert--premium-link ripple-effect" href="javascript:void(0)"><i class="fas fa-gem" style="color: #ffaa64;"></i>PREMİUM ELAN ET</a></div>
+                                                </div>
+                                                <div class="my-profile__advert--item">
+                                                    <div class="my-profile__advert--no">5</div>
+                                                    <div class="my-profile__advert--name"> <a href="#"  class="my-profile__advert--name-link"> lorem</a> </div>
+                                                    <div class="my-profile__advert--date">02.02.2020</div>
+                                                    <div class="my-profile__advert--status">ipsum</div>
+                                                    <div class="my-profile__advert--type">adada</div>
+                                                    <div class="my-profile__advert--premium"> <a class="advertInner__listLink my-profile__advert--premium-link ripple-effect" href="javascript:void(0)"><i class="fas fa-gem" style="color: #ffaa64;"></i>PREMİUM ELAN ET</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="my-profile-watch" role="tabpanel"
+                                        aria-labelledby="my-profile-watch-tab">  <h4 class="profile-heading">İzlədikləri <i class="fas fa-info-circle"></i></h4>
+                                        <div class="profile__watch__div row">
+                                            <div class="profile__watch__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                                <div class="game-group">
+                                                    <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                                    <div class="game-group--div">
+                                                        <img src="img/playstation.png" alt="">
+                                                        <span>PS4</span>
+                                                    </div>
+                                                    <p class="game-group--name">Far Cry New Dawn</p>
+                                                </div>
+                                              
+                                            </div>
+                                            <div class="profile__watch__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                                <div class="game-group">
+                                                    <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                                    <div class="game-group--div">
+                                                        <img src="img/playstation.png" alt="">
+                                                        <span>PS4</span>
+                                                    </div>
+                                                    <p class="game-group--name">Far Cry New Dawn</p>
+                                                </div>
+                                              
+                                            </div>
+                                            <div class="profile__watch__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                                <div class="game-group">
+                                                    <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                                    <div class="game-group--div">
+                                                        <img src="img/playstation.png" alt="">
+                                                        <span>PS4</span>
+                                                    </div>
+                                                    <p class="game-group--name">Far Cry New Dawn</p>
+                                                </div>
+                                              
+                                            </div>
+                                            <div class="profile__watch__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                                <div class="game-group">
+                                                    <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                                    <div class="game-group--div">
+                                                        <img src="img/playstation.png" alt="">
+                                                        <span>PS4</span>
+                                                    </div>
+                                                    <p class="game-group--name">Far Cry New Dawn</p>
+                                                </div>
+                                              
+                                            </div>
+                                            <div class="profile__watch__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                                <div class="game-group">
+                                                    <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                                    <div class="game-group--div">
+                                                        <img src="img/playstation.png" alt="">
+                                                        <span>PS4</span>
+                                                    </div>
+                                                    <p class="game-group--name">Far Cry New Dawn</p>
+                                                </div>
+                                              
+                                            </div>
+                                            <div class="profile__watch__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                                <div class="game-group">
+                                                    <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                                    <div class="game-group--div">
+                                                        <img src="img/playstation.png" alt="">
+                                                        <span>PS4</span>
+                                                    </div>
+                                                    <p class="game-group--name">Far Cry New Dawn</p>
+                                                </div>
+                                              
+                                            </div>
+                                            <div class="profile__watch__div--img-group col-sm-6 col-md-3 col-lg-4 col-xl-3">
+                                                <div class="game-group">
+                                                    <img src="img/farchy.png" alt="farcy" class="game-group--img">
+                                                    <div class="game-group--div">
+                                                        <img src="img/playstation.png" alt="">
+                                                        <span>PS4</span>
+                                                    </div>
+                                                    <p class="game-group--name">Far Cry New Dawn</p>
+                                                </div>
+                                              
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn profile__btn ripple-effect">+ Bütün oyunları gör (1234)</button></div>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+<!-- Modal FOR PREMIUM -->
+<div class="modal fade" id="premiumModal" tabindex="-1" role="dialog" aria-labelledby="premiumModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="premiumModalLabel">Premium Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL FOR AVATAR IMAGE -->
+  <div class="modal fade" id="cropImagePop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+<div class="modal-body">
+  <div id="upload-demo" class="center-block"></div>
+</div>
+          <div class="modal-footer">
+<button type="button" class="btn btn-default" data dismiss="modal">Close</button>
+<button type="button" id="cropImageBtn" class="btn btn-primary">Crop</button>
+</div>
+    </div>
+  </div>
+</div>
+  <!-- MODAL FOR BG IMAGE -->
+  <div class="modal fade" id="cropImagePopBG" tabindex="-1" role="dialog" aria-labelledby="myModalLabelBG" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+<div class="modal-body">
+  <div id="upload-demoBG" class="center-block"></div>
+</div>
+          <div class="modal-footer">
+<button type="button" class="btn btn-default" data dismiss="modal">Close</button>
+<button type="button" id="cropImageBtnBG" class="btn btn-primary">Crop</button>
+</div>
+    </div>
+  </div>
+</div>
+
+
+//= template/footer.html

@@ -1,0 +1,672 @@
+.my-profile {
+    &__mainImgBox {
+        position: relative;
+
+
+    }
+
+    &__achievement {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__btn {
+
+        padding: 5px 35px;
+        background: $color-red;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        height: 40px;
+
+        margin-left: 5px;
+
+        &:hover {
+            color: #fff;
+            background: $color-red-3;
+        }
+
+        &-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            bottom: 70px;
+            right: 20px;
+
+            @include respondmax(sm) {
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-end;
+              
+            }
+            @include respondmax(xs) {
+                right: 10px;
+                bottom: 100px;
+            }
+        }
+
+        &-save {
+            display: none;
+            margin-top: 10px;
+        }
+
+        &-bg {
+            display: none;
+            padding: 5px 10px;
+
+            @include respondmax(lg) {
+                bottom: 60px;
+            }
+
+            @include respondmax(sm) {
+                bottom: 125px;
+                margin-top: 10px;
+                margin-left: 0;
+            }
+            @include respondmax(xs) {
+              font-size: 13px;
+             
+            }
+        }
+    }
+
+    &__mainInfo {
+        display: flex;
+        justify-content: flex-end;
+
+        &--img-group {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+
+            @include respondmax(sm) {
+                bottom: 70px;
+            }
+            @include respondmax(xs) {
+                bottom: 100px;
+            }
+        }
+    }
+
+    &__userImgBox {
+        // position: relative;
+        height: auto;
+        text-align: center;
+        margin: 1rem auto;
+
+        @include respondmax(xl) {
+            height: auto;
+        }
+    }
+
+    &__myFileInp {
+        display: block;
+        position: relative;
+        margin-bottom: 0;
+        cursor: pointer;
+        font-size: 1.6rem;
+        user-select: none;
+        height: 150px;
+        width: 150px;
+        color: #fff;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        &__checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: transparent;
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+            border-radius: 50%;
+
+
+            i {
+                color: $color-blue-6;
+                font-size: 3rem;
+                display: block;
+                position: absolute;
+                z-index: 9999;
+                left: 60px;
+                bottom: 10px;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+        }
+
+        &__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: transparent;
+
+            border-radius: 50%;
+            opacity: 1;
+
+        }
+    }
+
+    &__myFileInp-bg {
+        display: block;
+        position: relative;
+        margin-bottom: 0;
+        cursor: pointer;
+        font-size: 1.6rem;
+        user-select: none;
+        height: 300px;
+        width: 100%;
+        color: #fff;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        &__checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: transparent;
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+            border-radius: 50%;
+
+
+            i {
+                color: $color-blue-6;
+                font-size: 4rem;
+                display: block;
+                position: absolute;
+                z-index: 9999;
+                left: 20px;
+                top: 15px;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+        }
+
+        &__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: transparent;
+            opacity: 1;
+
+        }
+    }
+
+    &__userImgProgres {
+        position: absolute;
+        bottom: 0rem;
+        right: -5rem;
+        width: 6rem;
+        height: auto;
+
+        @include respondmax(xl) {
+            bottom: 0;
+        }
+
+
+
+        @include respondmax(sm) {
+            right: 3rem;
+            width: 3rem;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        @include respondmax(lg) {
+            justify-content: center;
+        }
+
+        @include respondmax(md) {
+            padding: 10px 5px;
+
+        }
+
+        @include respondmax(sm) {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding: 0;
+            width: 100%;
+
+        }
+
+        &--item {
+
+            border-left: 2px solid #56585B;
+
+
+            &:not(:nth-child(3)) {
+                @include respondmax(sm) {
+                    border-right: 2px solid #56585B;
+                }
+
+                @include respondmax(xs) {
+                    border-right: none;
+                }
+            }
+
+            &:not(:nth-child(5)) {
+
+                @include respondmax(xs) {
+                    border-bottom: 2px solid #56585B !important;
+                }
+            }
+
+
+            &:not(:nth-child(n+4)) {
+                @include respondmax(sm) {
+                    border-bottom: 2px solid #56585B;
+                }
+
+                @include respondmax(xs) {
+                    border-bottom: none;
+                }
+            }
+
+            &:nth-of-type(odd) {
+                @include respondmax(xs) {
+                    border-right: 2px solid #56585B;
+                }
+            }
+
+            @include respondmax(sm) {
+                width: 33.3%;
+                border-left: none;
+
+            }
+
+            @include respondmax(xs) {
+                width: 50%;
+                border-left: none;
+
+            }
+
+        }
+
+        &--link {
+            color: #ffffff;
+            font-size: 16px;
+            padding: 15px;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: #282d34;
+                color: #ffffff;
+                transition: all .3s;
+            }
+
+            @include respondmax(lg) {
+                padding: 5px;
+            }
+
+            @include respondmax(md) {
+                font-size: 12px;
+                padding: 5px;
+            }
+        }
+    }
+
+    &__tab-div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        @include respondmax(lg) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__form {
+        padding: 10px 15px;
+    }
+
+    &__settings {
+        font-size: 20px;
+        width: 50px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #47494b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include respondmax(sm) {
+            width: 40px;
+            height: 35px;
+        }
+
+        &::after {
+            display: none;
+        }
+
+        &:hover i {
+            transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+            color: #999;
+            cursor: pointer;
+
+        }
+
+        &:hover {
+            background-color: #47494b;
+        }
+    }
+
+    &__dropdown {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+        @include respondmax(sm) {
+            top: 10px;
+        }
+        @include respondmax(xs) {
+            right: 10px;
+        }
+
+        &-menu {
+            transform: translate3d(-70px, 40px, 0px) !important;
+        }
+    }
+
+    &__advert {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 15px;
+
+        &--head {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            div {
+                padding: 0 5px 10px;
+                text-align: left;
+                line-height: 32px;
+            }
+
+        }
+
+        &--item {
+            display: flex;
+            justify-content: space-between;
+
+            div {
+                padding: 10px 5px;
+                text-align: left;
+                line-height: 32px;
+            }
+
+            &:nth-of-type(odd) {
+                background-color: #373a3f;
+            }
+        }
+
+        &--no {
+            width: 8%;
+
+            @include respondmax(sm) {
+                width: 10%;
+            }
+        }
+
+        &__name {
+            width: 21%;
+
+            @include respondmax(xl) {
+                width: 12%;
+            }
+            
+            @include respondmax(lg) {
+                width: 29%;
+            }
+            @include respondmax(sm) {
+                width: 60%;
+            }
+        }
+
+        &--name {
+            width: 21%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #fff;
+
+            @include respondmax(xl) {
+                width: 12%;
+            }
+            @include respondmax(lg) {
+                width: 29%;
+            }
+            @include respondmax(sm) {
+                width: 60%;
+            }
+
+            &-link {
+                color: #fff;
+
+                &:hover {
+                    color: $color-red;
+                    transition: all .3s;
+                }
+            }
+
+            &:hover {
+                color: $color-red;
+                transition: all .3s;
+            }
+        }
+
+        &--date {
+            width: 19%;
+            @include respondmax(xl) {
+                width: 22%;
+            }
+            @include respondmax(lg) {
+                width: 18%;
+            }
+            @include respondmax(sm) {
+                width: 30%;
+            }
+        }
+
+        &--status,
+        &--type {
+            width: 11%;
+            @include respondmax(xl) {
+                width: 13%;
+            }
+            @include respondmax(lg) {
+                width: 10%;
+            }
+            @include respondmax(sm) {
+                display: none;
+            }
+        }
+        &--premium {
+            width: 28%;
+
+            @include respondmax(xl) {
+               width: 32%;
+            }
+            @include respondmax(lg) {
+                width: 25%;
+             }
+            @include respondmax(sm) {
+                display: none;
+            }
+            &-link {
+                padding-right: .5rem !important;
+                padding-left: 3rem !important;
+                i {
+                    left: .8rem;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+////////////////
+////////////////////
+/////////////////
+
+
+.file-upload {
+    display: none;
+}
+
+.file-upload-1 {
+    display: none;
+}
+
+.circle {
+    border-radius: 1000px !important;
+    overflow: hidden;
+    width: 128px;
+    height: 128px;
+    border: 5px solid #47494b;
+
+    position: relative;
+
+}
+
+.circle-1 {
+    overflow: hidden;
+    max-width:1106px;
+    height: 300px;
+
+
+    // bottom: 45px;
+
+}
+
+.profile-pic {
+   width: 128px;
+   height: 128px;
+    display: block;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+
+}
+
+.bg-pic {
+    // min-width: 100%;
+height: 300px;
+max-width: 100%;
+    // max-width: 100%;
+}
+
+.p-image {
+    position: absolute;
+    left: 46px;
+    bottom: 7px;
+    // bottom: 60px;
+    bottom: 7px;
+    color: #666666;
+    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+
+.p-image-1 {
+
+    color: #666666;
+    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+
+
+}
+
+.p-image:hover {
+    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+
+.upload-button {
+    font-size: 3em;
+
+    &:hover {
+        transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+        color: #999;
+        cursor: pointer;
+    }
+}
+
+.upload-button-1 {
+    font-size: 20px;
+    color: #fff;
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #47494b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+        color: #999;
+        cursor: pointer;
+    }
+
+    @include respondmax(sm) {
+        width: 40px;
+        height: 35px;
+    }
+}
+
+#upload-demo{
+	width: 250px;
+    height: 250px;
+    .cr-viewport{
+        border-radius: 50%;
+    }
+
+}
+#upload-demoBG{
+	min-width:  100%;
+	height: 300px;
+
+    .cr-boundary{
+      border: 1px solid black
+    }
+    .cr-overlay{
+       top: 0;
+      }
+      .cr-image {
+          transform-origin: none !important;
+      }
+}

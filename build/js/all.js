@@ -10,12 +10,12 @@ $(document).ready(function () {
 
     $(".sale-checkbox").on('change', function () {
         if ($(this).is(':checked')) {
-            $(this).attr('value', 'true');
+           
             $('.sales-information').css({
                 "display": "block"
             });
         } else {
-            $(this).attr('value', 'false');
+           
             $('.sales-information').css({
                 "display": "none"
             });
@@ -25,12 +25,12 @@ $(document).ready(function () {
     });
     $(".rental-checkbox").on('change', function () {
         if ($(this).is(':checked')) {
-            $(this).attr('value', 'true');
+           
             $('.rental-information').css({
                 "display": "block"
             });
         } else {
-            $(this).attr('value', 'false');
+          
             $('.rental-information').css({
                 "display": "none"
             });
@@ -40,12 +40,12 @@ $(document).ready(function () {
 
     $(".barter-checkbox").on('change', function () {
         if ($(this).is(':checked')) {
-            $(this).attr('value', 'true');
+          
             $('.barter-information').css({
                 "display": "block"
             });
         } else {
-            $(this).attr('value', 'false');
+           
             $('.barter-information').css({
                 "display": "none"
             });
@@ -102,6 +102,128 @@ $(document).ready(function () {
 
 
 });
+// Start upload preview image
+
+var $uploadCrop,
+	tempFilename,
+	rawImg,
+	imageId;
+
+function readFile1(input5) {
+	if (input5.files && input5.files[0]) {
+		var reader = new FileReader();
+		reader.onload = function (e) {
+			$('.upload-demo').addClass('ready');
+			$('#cropImagePop').modal('show');
+			rawImg = e.target.result;
+		}
+		reader.readAsDataURL(input5.files[0]);
+	} else {
+		swal("Sorry - you're browser doesn't support the FileReader API");
+	}
+}
+
+$uploadCrop = $('#upload-demo').croppie({
+	viewport: {
+		width: 128,
+		height: 128,
+		borderRadius: '50%'
+	},
+	enforceBoundary: false,
+	enableExif: true
+});
+$('#cropImagePop').on('shown.bs.modal', function () {
+	// alert('Shown pop');
+	$uploadCrop.croppie('bind', {
+		url: rawImg
+	}).then(function () {
+		console.log('jQuery bind complete');
+	});
+});
+
+$('.item-img').on('change', function () {
+	imageId = $(this).data('id');
+	tempFilename = $(this).val();
+	$('#cancelCropBtn').data('id', imageId);
+	readFile1(this);
+});
+$('#cropImageBtn').on('click', function (ev) {
+	$uploadCrop.croppie('result', {
+		type: 'base64',
+		format: 'jpeg',
+		size: {
+			width: 150,
+			height: 200
+		}
+	}).then(function (resp) {
+		$('#item-img-output').attr('src', resp);
+		$('#cropImagePop').modal('hide');
+	});
+});
+// End upload preview image
+
+
+// CROP BACKGROUND IMAGE
+
+// Start upload preview image
+
+var $uploadCropBG,
+	tempFilenameBG,
+	rawImgBG,
+	imageIdBG;
+
+function readFile2(input6) {
+	if (input6.files && input6.files[0]) {
+		var reader = new FileReader();
+		reader.onload = function (e) {
+			$('.upload-demoBG').addClass('ready');
+			$('#cropImagePopBG').modal('show');
+			rawImgBG = e.target.result;
+		}
+		reader.readAsDataURL(input6.files[0]);
+	} else {
+		swal("Sorry - you're browser doesn't support the FileReader API");
+	}
+}
+
+$uploadCropBG = $('#upload-demoBG').croppie({
+	viewport: {
+		width: '100%',
+		height: 300,
+	
+	},
+	enforceBoundary: false,
+	enableExif: true
+});
+$('#cropImagePopBG').on('shown.bs.modal', function () {
+	// alert('Shown pop');
+	$uploadCropBG.croppie('bind', {
+		url: rawImgBG
+	}).then(function () {
+		console.log('jQuery bind complete');
+	});
+});
+
+$('.item-imgBG').on('change', function () {
+	imageIdBG = $(this).data('id');
+	tempFilenameBG = $(this).val();
+	$('#cancelCropBtn').data('id', imageIdBG);
+	readFile2(this);
+});
+$('#cropImageBtnBG').on('click', function (ev) {
+	$uploadCropBG.croppie('result', {
+		type: 'base64',
+		format: 'jpeg',
+		size: {
+			width: 553,
+			height: 150
+		}
+	}).then(function (respBG) {
+		$('#item-img-outputBG').attr('src', respBG);
+		$('#cropImagePopBG').modal('hide');
+	});
+});
+// End upload preview image
 $(document).ready(function(){        
     //для контейнера с id #IDhtmlcont - 
     Dropzone.options.IDhtmlcont = {
@@ -131,6 +253,22 @@ $( document ).ready(function() {
         disableMobile: "true"
     });
 });
+$(document).ready(function () {
+    $("#forumDiscussInput").bind("keyup", function() {
+        var text = $(this).val().toLowerCase();
+        var items = $(".forum__discuss--topic");
+    
+        //first, hide all:
+        items.parent().parent().hide();
+    
+        //show only those matching user input:
+        items.filter(function () {
+            return $(this).text().toLowerCase().indexOf(text) > -1;
+        }).parent().parent().show();
+    });
+});
+
+
 $(document).ready(function(){
     $('.main__carousel').owlCarousel({
         loop:true,
@@ -162,16 +300,16 @@ $(document).ready(function(){
     });
  });
 
-$(document).ready(function () {
-    $('.registr-form').parsley().on('field:validated', function () {
-            var ok = $('.parsley-error').length === 0;
-            $('.bs-callout-info').toggleClass('hidden', !ok);
-            $('.bs-callout-warning').toggleClass('hidden', ok);
-        })
-        .on('form:submit', function () {
-            return false; // Don't submit form for this demo
-        });
-});
+// $(document).ready(function () {
+//     $('.registr-form').parsley().on('field:validated', function () {
+//             var ok = $('.parsley-error').length === 0;
+//             $('.bs-callout-info').toggleClass('hidden', !ok);
+//             $('.bs-callout-warning').toggleClass('hidden', ok);
+//         })
+//         .on('form:submit', function () {
+//             return false; // Don't submit form for this demo
+//         });
+// });
 $( document ).ready(function() {
    // Ripple-effect animation
 (function($) {
@@ -207,6 +345,54 @@ $( document ).ready(function() {
     })
 })(jQuery);
 });
+
+ $(document).ready(function() {
+    //  MY PROFİLE .HTML
+        
+        var readURL3 = function(input3) {
+            if (input3.files && input3.files[0]) {
+                var reader3 = new FileReader();
+    
+                reader3.onload = function (e) {
+                    $('.profile-pic').attr('src', e.target.result);
+                }
+        
+                reader3.readAsDataURL(input3.files[0]);
+            }
+        }
+        
+    
+        $(".file-upload").on('change', function(){
+            readURL3(this);
+        });
+        
+        $(".upload-button").on('click', function() {
+           $(".file-upload").click();
+        });
+    
+        var readURL = function(input4) {
+            if (input4.files && input4.files[0]) {
+                var reader4 = new FileReader();
+    
+                reader4.onload = function (e) {
+                    $('.bg-pic').attr('src', e.target.result);
+                }
+        
+                reader4.readAsDataURL(input4.files[0]);
+            }
+        }
+        
+    
+        $(".file-upload-1").on('change', function(){
+            readURL(this);
+        });
+        
+        $(".upload-button-1").on('click', function() {
+           $(".file-upload-1").click();
+        });
+        
+    
+    });
 $(document).ready(function() {
     function readURL(input1) {
 
@@ -247,6 +433,8 @@ $(document).ready(function() {
     $("#profile-img-2").change(function(){
         readURL2(this);
     });
+
+   
 
 
  });
