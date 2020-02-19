@@ -253,6 +253,11 @@ $( document ).ready(function() {
         disableMobile: "true"
     });
 });
+$( ".forum-inner__btn" ).click(function() {
+    $( ".forum-inner__discuss" ).slideToggle( "slow", function() {
+      // Animation complete.
+    });
+  });
 $(document).ready(function () {
     $("#forumDiscussInput").bind("keyup", function() {
         var text = $(this).val().toLowerCase();
