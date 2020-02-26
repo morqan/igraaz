@@ -143,15 +143,15 @@
                             <div class="inputBox">
                                 <span class="inputBox__fieldType">Elanın növü</span>
                                 <label class="myCheckbox">Satıram
-                                    <input type="checkbox" checked="checked" name="checkbox" class="sale-checkbox">
+                                    <input type="checkbox"  name="checkbox" class="user-sale-checkbox">
                                     <span class="myCheckbox__checkmark"></span>
                                 </label>
                                 <label class="myCheckbox">İcarəyə verirəm
-                                    <input type="checkbox" name="checkbox" class="rental-checkbox">
+                                    <input type="checkbox" name="checkbox" class="user-rental-checkbox">
                                     <span class="myCheckbox__checkmark"></span>
                                 </label>
                                 <label class="myCheckbox">Barter edirəm
-                                    <input type="checkbox" name="checkbox" class="barter-checkbox">
+                                    <input type="checkbox" name="checkbox" class="user-barter-checkbox">
                                     <span class="myCheckbox__checkmark"></span>
                                 </label>
                             </div>
@@ -241,13 +241,13 @@
                     </div>
 
                 </div>
-                <div class="sales-information">
+                <div class="user-sales-information">
                     <h3 class="box__title">SATIŞ MƏLUMATLARI</h3>
                     <div class="grayBox__content">
 
                         <div class="form-row">
                             <div class="col-lg-3">
-                                <input type="text" class="form-control form__control  sales-information__input" placeholder="Satış qiyməti">
+                                <input type="text" class="form-control form__control  user-sales-information__input" placeholder="Satış qiyməti">
                             </div>
 
 
@@ -255,13 +255,13 @@
 
                     </div>
                 </div>
-                <div class="rental-information">
+                <div class="user-rental-information">
                     <h3 class="box__title">İCARƏ MƏLUMATLARI</h3>
                     <div class="grayBox__content">
 
                         <div class="form-row">
                             <div class="col-lg-3">
-                                <input type="text" class="form-control form__control rental-information__input" placeholder="İcarə qiyməti">
+                                <input type="text" class="form-control form__control user-rental-information__input" placeholder="İcarə qiyməti">
                             </div>
 
                             <div class="col-lg-3">
@@ -278,13 +278,13 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <input type="text" class="form-control form__control  rental-information__input" placeholder="Əlavə qeydlər">
+                                <input type="text" class="form-control form__control  user-rental-information__input" placeholder="Əlavə qeydlər">
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="barter-information">
+                <div class="user-barter-information">
 
                     <h3 class="box__title">BARTER MƏLUMATLARI</h3>
                     <div class="grayBox__content">
@@ -294,22 +294,22 @@
                                 <div class="inputBox">
                                     <span class="inputBox__fieldType">Barter növü</span>
                                     <label class="myRadio">Başa-baş
-                                        <input type="radio" name="radio" class="on-equal-terms" data-id="on-equal-terms">
+                                        <input type="radio" name="barter-radio" class="on-equal-terms" data-id="on-equal-terms">
                                         <span class="myRadio__checkmark"></span>
                                     </label>
                                     <label class="myRadio">Üstündə pul tələb edirəm
-                                        <input type="radio" name="radio" data-id="on-money-terms">
+                                        <input type="radio" name="barter-radio" data-id="on-money-terms">
                                         <span class="myRadio__checkmark"></span>
                                     </label>
                                     <label class="myRadio">Üstündə pul verirəm
-                                        <input type="radio" name="radio" data-id="on-money-terms">
+                                        <input type="radio" name="barter-radio" data-id="on-money-terms">
                                         <span class="myRadio__checkmark"></span>
                                     </label>
                                 </div>
                             </div>
                             <div class="col-lg-4">
 
-                                <input type="text" class="form-control form__control barter-information__input" placeholder="Məbləğ">
+                                <input type="text" class="form-control form__control user-barter-information__input" placeholder="Məbləğ">
                             </div>
 
                             <!-- <div class="col-lg-3">
@@ -478,6 +478,8 @@
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <!-- PARSLEY JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.1/parsley.min.js"></script>
+<!-- CK EDİTOR -->
+<script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
 <!-- <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script> -->
 <!-- <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script> -->
 <script src="js/all.js"></script>
