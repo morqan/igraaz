@@ -96,6 +96,7 @@
         justify-content: space-between;
         align-items: center;
 
+
         @include respondmax(sm) {
            margin-right: 0;
           }
@@ -121,6 +122,13 @@
         background-color: $color-red;
         color: $color-white;
         text-align: center;
+        margin-left: 10px;
+
+        &-group{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
         &:focus {
             outline: none;
@@ -197,6 +205,24 @@
             }
 
         }
+    }
+
+    &__like-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        
+      
+        &--group{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+    
     }
 
     &--topic {
@@ -299,27 +325,16 @@
             }
         }
 
-        &--text {
-            padding-bottom: 10px;
-        }
+        // &--text {
+        //     padding-bottom: 10px;
+        // }
 
         &__text-group {
             text-align: left;
             margin-right: 10px;
         }
 
-        &__like {
-            &--div {
-                border-top: 1px solid $color-gray-border;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: flex-start;
-                padding-top: 10px;
-            }
-
-        
-        }
+       
 
         &__date {
             display: flex;

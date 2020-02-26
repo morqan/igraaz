@@ -1,0 +1,111 @@
+.categoryCard {
+    border-radius: 1.8rem;
+    // background-color: $color-advert;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin-bottom: 2rem;
+    
+    &__imgBox{
+        height: 16.5rem;
+        box-shadow: inset 0px -70px 117px 0px rgba(0,0,0,0.82);
+        background-color: transparent;
+    }
+
+    &__img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: -2;
+    }
+  
+    &__title{
+        color: $color-white;
+        text-align: center;
+        font-size: 1.8rem;
+        width: 100%;
+        white-space: nowrap;
+        // overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        padding: 1rem 1.5rem;
+        font-weight: bold;
+        line-height: 1.8rem;
+    }
+    &__content{
+        color: #fff;
+        padding: 1rem;
+        display: flex;
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+        // background-color: $color-advert;
+      
+    }
+
+    &__infoBox{
+        background-color: $color-advert;
+    }
+
+    &__info{
+        display: flex;
+        padding: 1rem;
+        justify-content: center;
+        background-color: $color-advert;
+    }
+
+    &__categiry{
+        background-color: $color-red-2;
+        text-align: center;
+        padding: .5rem 5rem;
+        font-size: 1.4rem;
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+        
+    }
+    &__consol{
+        background-color: $color-paymantDrop;
+        text-align: center;
+        padding: .5rem 5rem;
+        font-size: 1.4rem;
+        
+    }
+    &__icon{
+        line-height: 2rem;
+        font-size: 2rem;
+        &--blue{
+            color: $color-blue;
+        }
+        &--gold{
+            color: $color-gold;
+        }
+    }
+    &__price{
+        font-size: 2.4rem;
+    }
+
+    &__price2{
+        background-color: $color-blue-2;
+        text-align: center;
+        padding: .5rem 5rem;
+        font-size: 1.4rem;
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+    &__numeral{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+   
+
+    &__date{
+        color: $color-white;
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+        background-color: $color-advert;
+
+    }
+
+  }

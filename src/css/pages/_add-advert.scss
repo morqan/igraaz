@@ -2,12 +2,20 @@
     display: block;
 }
 
-.rental-information {
-    display: none;
-}
+// .rental-information {
+//     display: none;
+// }
 
 .barter-information {
-    display: none;
+    // display: none;
+
+    &__input{
+        display: none;
+    }
+}
+
+.user-barter-information {
+    // display: none;
 
     &__input{
         display: none;

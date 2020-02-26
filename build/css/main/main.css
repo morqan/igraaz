@@ -3004,13 +3004,11 @@ Link : http://techhysahil.com
 .personal-information-box {
   display: block; }
 
-.rental-information {
+.barter-information__input {
   display: none; }
 
-.barter-information {
+.user-barter-information__input {
   display: none; }
-  .barter-information__input {
-    display: none; }
 
 .custom-dropdown {
   /* Size and position */
@@ -4200,7 +4198,24 @@ Link : http://techhysahil.com
     border: none;
     background-color: #ff295a;
     color: #fff;
-    text-align: center; }
+    text-align: center;
+    margin-left: 10px; }
+    .forum-inner__btn-group {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+         -moz-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+         -moz-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
     .forum-inner__btn:focus {
       outline: none; }
     @media (max-width: 991px) {
@@ -4285,6 +4300,53 @@ Link : http://techhysahil.com
       background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
     .forum-inner__social--item:not(:last-child) {
       margin-right: 10px; }
+  .forum-inner__like-icon {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .forum-inner__like-icon--group {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+         -moz-box-orient: vertical;
+         -moz-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+         -moz-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+         -moz-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      cursor: pointer; }
   .forum-inner--topic {
     font-weight: bold;
     font-size: 18px;
@@ -4425,36 +4487,9 @@ Link : http://techhysahil.com
            -moz-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between; }
-    .forum-inner__comment--text {
-      padding-bottom: 10px; }
     .forum-inner__comment__text-group {
       text-align: left;
       margin-right: 10px; }
-    .forum-inner__comment__like--div {
-      border-top: 1px solid #56585B;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-         -moz-box-orient: vertical;
-         -moz-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: start;
-      -webkit-justify-content: flex-start;
-         -moz-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
-      -webkit-box-align: start;
-      -webkit-align-items: flex-start;
-         -moz-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
-      padding-top: 10px; }
     .forum-inner__comment__date {
       display: -webkit-box;
       display: -webkit-flex;
@@ -4471,3 +4506,185 @@ Link : http://techhysahil.com
          -moz-box-align: baseline;
           -ms-flex-align: baseline;
               align-items: baseline; }
+
+.discussion {
+  font-size: 16px; }
+  .discussion__h1 {
+    text-align: center; }
+  .discussion__subject-input {
+    padding: 5px 10px;
+    height: 48px;
+    font-size: 15px; }
+    .discussion__subject-input::-webkit-input-placeholder {
+      font-size: 15px; }
+    .discussion__subject-input:-moz-placeholder {
+      font-size: 15px; }
+    .discussion__subject-input::-moz-placeholder {
+      font-size: 15px; }
+    .discussion__subject-input:-ms-input-placeholder {
+      font-size: 15px; }
+    .discussion__subject-input::placeholder {
+      font-size: 15px; }
+  .discussion__label {
+    display: block;
+    text-align: left; }
+  .discussion__btn {
+    font-size: 1.8rem;
+    padding: 1rem 5rem;
+    color: #fff;
+    line-height: 1.8rem;
+    margin-bottom: unset;
+    background-color: #ff295a;
+    -webkit-border-radius: .5rem !important;
+       -moz-border-radius: .5rem !important;
+            border-radius: .5rem !important;
+    border: unset;
+    text-align: center;
+    margin-left: auto; }
+    @media (max-width: 575px) {
+      .discussion__btn {
+        width: 100%; } }
+  .discussion__select {
+    width: 100%; }
+    .discussion__select .select2-selection--single::after {
+      right: 3%; }
+      @media (max-width: 575px) {
+        .discussion__select .select2-selection--single::after {
+          right: 5%; } }
+  @media (max-width: 991px) {
+    .discussion__content {
+      padding: 0 2rem; } }
+  .discussion__right {
+    margin-top: 25px;
+    padding: 0 15px; }
+    @media (max-width: 1199px) {
+      .discussion__right {
+        padding: 0; } }
+    @media (max-width: 575px) {
+      .discussion__right {
+        margin-top: 15px; } }
+
+.forget-password {
+  margin-bottom: 20px; }
+  .forget-password__form {
+    margin-top: 40px; }
+
+.reset-password {
+  margin-bottom: 20px; }
+  .reset-password__form {
+    margin-top: 40px; }
+
+.categoryCard {
+  -webkit-border-radius: 1.8rem;
+     -moz-border-radius: 1.8rem;
+          border-radius: 1.8rem;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  margin-bottom: 2rem; }
+  .categoryCard__imgBox {
+    height: 16.5rem;
+    -webkit-box-shadow: inset 0px -70px 117px 0px rgba(0, 0, 0, 0.82);
+       -moz-box-shadow: inset 0px -70px 117px 0px rgba(0, 0, 0, 0.82);
+            box-shadow: inset 0px -70px 117px 0px rgba(0, 0, 0, 0.82);
+    background-color: transparent; }
+  .categoryCard__img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: -2; }
+  .categoryCard__title {
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    width: 100%;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    display: block;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    line-height: 1.8rem; }
+  .categoryCard__content {
+    color: #fff;
+    padding: 1rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 15px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .categoryCard__infoBox {
+    background-color: #212427; }
+  .categoryCard__info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #212427; }
+  .categoryCard__categiry {
+    background-color: #d72b33;
+    text-align: center;
+    padding: .5rem 5rem;
+    font-size: 1.4rem;
+    -webkit-border-top-left-radius: .5rem;
+       -moz-border-radius-topleft: .5rem;
+            border-top-left-radius: .5rem;
+    -webkit-border-bottom-left-radius: .5rem;
+       -moz-border-radius-bottomleft: .5rem;
+            border-bottom-left-radius: .5rem; }
+  .categoryCard__consol {
+    background-color: #282d34;
+    text-align: center;
+    padding: .5rem 5rem;
+    font-size: 1.4rem; }
+  .categoryCard__icon {
+    line-height: 2rem;
+    font-size: 2rem; }
+    .categoryCard__icon--blue {
+      color: #00aeef; }
+    .categoryCard__icon--gold {
+      color: #ffaa64; }
+  .categoryCard__price {
+    font-size: 2.4rem; }
+  .categoryCard__price2 {
+    background-color: #2f353d;
+    text-align: center;
+    padding: .5rem 5rem;
+    font-size: 1.4rem;
+    -webkit-border-top-right-radius: .5rem;
+       -moz-border-radius-topright: .5rem;
+            border-top-right-radius: .5rem;
+    -webkit-border-bottom-right-radius: .5rem;
+       -moz-border-radius-bottomright: .5rem;
+            border-bottom-right-radius: .5rem; }
+  .categoryCard__numeral {
+    font-size: 2rem;
+    line-height: 2rem; }
+  .categoryCard__date {
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    background-color: #212427; }

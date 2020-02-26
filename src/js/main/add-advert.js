@@ -8,6 +8,37 @@ $(document).ready(function () {
     //     $('.personal-information-box').slideUp(1000);
     // });
 
+    if($(".sale-checkbox").prop('checked') == true){
+        $('.sales-information').css({
+            "display": "block"
+        });
+    }else {
+        $('.sales-information').css({
+            "display": "none"
+        });
+        $('.sales-information__input').val('');
+    }
+    if($(".rental-checkbox").prop('checked') == true){
+        $('.rental-information').css({
+            "display": "block"
+        });
+    }else {
+        $('.rental-information').css({
+            "display": "none"
+        });
+        $('.rental-information__input').val('');
+    }
+    if($(".barter-checkbox").prop('checked') == true){
+        $('.barter-information').css({
+            "display": "block"
+        });
+    }else {
+        $('.barter-information').css({
+            "display": "none"
+        });
+        $('.barter-information__input').val('');
+    }
+
     $(".sale-checkbox").on('change', function () {
         if ($(this).is(':checked')) {
            
@@ -96,6 +127,14 @@ $(document).ready(function () {
         });
         $('.advert-rental-time').on('change', function () {
             $('.advert-rental-time-hidden').val($(this).val());
+        });
+
+        $('.discussion__category').select2({
+            placeholder: "Kateqoriya",
+
+        });
+        $('.discussion__category').on('change', function () {
+            $('.discussion__category-hidden').val($(this).val());
         });
     });
 
