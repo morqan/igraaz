@@ -1,5 +1,25 @@
 .category{
 
+    &__select {
+        position: relative;
+        display: inline-block;
+
+        margin-right: 3rem;
+        @include respondmax(sm) {
+            width: 100%;
+           margin-bottom: 10px;
+        }
+        &--icon{
+            position: absolute;
+            top: 35%;
+            right: 10%;
+            z-index: 999;
+            @include respondmax(sm) {
+              right: 7%;
+            }
+        }
+    }
+
     &__sortBox{
         position: relative;
         margin: 3rem 0;
