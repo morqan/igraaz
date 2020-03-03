@@ -79,9 +79,17 @@ $(document).ready(function () {
             $('.user-barter-information').css({
                 "display": "none"
             });
-            $('.user-barter-information').find('input:radio').prop('checked', false);
+            // $('.user-barter-information').find('input:radio').prop('checked', false);
         }
     });
+
+    // var radios = document.getElementsByName("barter-radio");
+    // var val = localStorage.getItem('barter-radio');
+    // for(var i=0;i<radios.length;i++){
+    //   if(radios[i].value == val){
+    //     radios[i].checked = true;
+    //   }
+    // }
 
     $("input[type='radio'][name='barter-radio']").on('change', function () {
        let barterDataID = $(this).attr('data-id');
@@ -94,7 +102,10 @@ $(document).ready(function () {
                 "display": "block"
             });
         }
+
+       
     });
+  
 
   
 
