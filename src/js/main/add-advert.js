@@ -130,7 +130,7 @@ $(document).ready(function () {
         });
 
         $('.discussion__category').select2({
-            placeholder: "Kateqoriya",
+            placeholder: "Kateqoriya seçin",
 
         });
         $('.discussion__category').on('change', function () {

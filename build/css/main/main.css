@@ -4856,11 +4856,35 @@ Select2 Override style
         width: 100%; } }
   .discussion__select {
     width: 100%; }
+    .discussion__select > .select2-container--default .select2-selection--single {
+      background-color: #282d34;
+      border: none;
+      color: #fff;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      padding: 10px 5px;
+      height: 100%;
+      -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+         -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+              box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5); }
     .discussion__select .select2-selection--single::after {
       right: 3%; }
       @media (max-width: 575px) {
         .discussion__select .select2-selection--single::after {
           right: 5%; } }
+    .discussion__select .select2-container--default .select2-selection--single .select2-selection__rendered {
+      color: #fff;
+      padding-left: 10px; }
+    .discussion__select .select2-container--default .select2-selection--single:after {
+      font-family: "Font Awesome 5 Free";
+      color: #fff;
+      font-weight: 900;
+      content: "\f063";
+      font-size: 16px;
+      position: absolute;
+      right: 5%;
+      top: 25%; }
   @media (max-width: 991px) {
     .discussion__content {
       padding: 0 2rem; } }
